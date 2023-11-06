@@ -333,6 +333,11 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-c
   padding-bottom: 20px;
 }
 
+#map {
+	height: 500px;
+	width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -343,8 +348,8 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-c
 }
 
 body {
-  background: #00163f;
-  color: #fff;
+  background: whitesmoke;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -401,12 +406,12 @@ p {
   margin-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
-  color: #fff;
+  color: black;
   line-height: 24px;
 }
 
 a {
-  color: #fff;
+  color: #0b82f4;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -417,7 +422,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #df01ae;
+  color: black;
   text-decoration: none;
   outline: none;
 }
@@ -493,14 +498,14 @@ ul li {
   margin-bottom: 40px !important;
 }
 .section-header h2 {
-  text-shadow: 2px 2px 0 #df01ae;
+  text-shadow: 2px 2px 0 #007bb5;
   margin-top: -10px;
   z-index: 9 !important;
 }
 .section-header h2:after {
   width: 210px;
   height: 210px;
-  background: url(../images/shape/header.png);
+  background: url();
   background-size: contain;
   background-repeat: no-repeat;
   top: -85px;
@@ -517,11 +522,13 @@ ul li {
 .bg-image {
   background: url("../images/event/01.png");
   background-size: cover;
-}
+  height: 50%;
+} 
 
-@media (min-width: 992px) {
+@media (min-width: 996) {
   .shape-b {
     position: relative;
+    
   }
   .shape-b * {
     z-index: 99;
@@ -529,7 +536,7 @@ ul li {
   .shape-b:before {
     position: absolute;
     content: "";
-    background: url("../images/shape/01.png");
+    background: url();
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -539,7 +546,7 @@ ul li {
   .shape-b:after {
     position: absolute;
     content: "";
-    background: url("../images/shape/03.png");
+    background: url();
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -556,7 +563,7 @@ ul li {
   .shape-a:before {
     position: absolute;
     content: "";
-    background: url("../images/shape/01.png");
+    background: url();
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -565,7 +572,7 @@ ul li {
   .shape-a:after {
     position: absolute;
     content: "";
-    background: url(../images/shape/02.png);
+    background: url();
     width: 100px;
     height: 100px;
     background-size: cover;
@@ -582,7 +589,7 @@ ul li {
   .shape-c:before {
     position: absolute;
     content: "";
-    background: url("../images/shape/01.png");
+    background: url();
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -592,7 +599,7 @@ ul li {
   .shape-c:after {
     position: absolute;
     content: "";
-    background: url(../images/shape/03.png);
+    background: url();
     width: 200px;
     height: 200px;
     background-size: cover;
@@ -854,8 +861,8 @@ ul li {
 }
 
 .schedule-pack h5 {
-  color: #df01ae;
-  border-top: 4px solid #df01ae;
+  color: black;
+  border-top: 4px solid #007bb5;
   border-radius: 5px;
   padding: 19px 0;
 }
@@ -877,7 +884,7 @@ ul li {
   font-family: "icoFont" !important;
   background: none;
   transform: rotate(90deg);
-  color: #df01ae;
+  color: blacks;
 }
 .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button .accor-header-inner {
   gap: 10px;
@@ -925,7 +932,7 @@ ul li {
   }
 }
 .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button .accor-header-inner .h7 {
-  color: #df01ae;
+  color: #007bb5;
   font-family: "Arvo", serif;
 }
 .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button.collapsed {
@@ -954,7 +961,7 @@ ul li {
   transition: all 0.3s ease;
 }
 .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button.collapsed .h7 {
-  color: #fff;
+  color: black;
   font-family: "Arvo", serif;
 }
 .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button:focus {
@@ -981,7 +988,7 @@ ul li {
   color: #555555;
 }
 .schedule-pack .schedule-list .accordion-item .accordion-collapse .accordion-body .ev-schedule-meta li span {
-  color: #df01ae;
+  color:  #444444;
 }
 
 .pricing-item .pricing-inner {
@@ -1698,13 +1705,13 @@ ul li {
   color: #55acee;
 }
 .social-share a:hover.behance {
-  color: #1769ff;
+  color:  #0d8ef9  ;
 }
 .social-share a:hover.instagram {
-  color: #e4405f;
+  color: black;
 }
 .social-share a:hover.vimeo {
-  color: #3b5998;
+  color: #0d8ef9 ;
 }
 .social-share a:hover.linkedin {
   color: #007bb5;
@@ -1717,8 +1724,8 @@ ul li {
   display: inline-block;
   line-height: 56px;
   padding: 0 30px;
-  background: #fff;
-  color: #df01ae;
+  background: #0d8ef9 ;
+  color: #1769ff;
   font-family: "Arvo", serif;
   font-style: italic;
   font-size: 14px;
@@ -1732,7 +1739,7 @@ ul li {
   box-shadow: 4px 4px 0 0 currentColor;
 }
 .lab-btn span {
-  color: #df01ae;
+  color: white;
 }
 .lab-btn:hover {
   box-shadow: none;
@@ -1763,7 +1770,7 @@ ul li {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background: #df01ae;
+  background:  #0d8ef9 ;
   text-align: center;
   border-radius: 50%;
   font-size: 24px;
@@ -1805,7 +1812,7 @@ ul li {
 .pluse_1::after, .pluse_1::before,
 .pluse_2::after,
 .pluse_2::before {
-  background: #df01ae;
+  background: black;
   border-radius: 50%;
   left: 50%;
   top: 50%;
@@ -2093,7 +2100,7 @@ ul li {
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background: #df01ae;
+  background: #0d8ef9;
 }
 .preloader .preloader-inner {
   position: absolute;
@@ -2169,7 +2176,7 @@ ul li {
 .account-wrapper {
   border-radius: 8px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
-  background: #00102e;
+  background:  #3a5f80;
   padding: 60px 80px;
   text-align: center;
   max-width: 545px;
@@ -2284,7 +2291,7 @@ ul li {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background: #df01ae;
+  background:  #0d8ef9 ;
   position: relative;
   font-size: 14px;
   text-transform: uppercase;
@@ -2300,11 +2307,11 @@ ul li {
   content: "";
   top: 50%;
   left: 50%;
-  background: #df01ae;
+  background:  #0b82f4 ;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background: rgba(223, 1, 174, 0.3);
+  background:  #0b82f4 ;
   width: 100%;
   height: 100%;
   animation: pulse 2s linear infinite;
@@ -2769,7 +2776,7 @@ ul li {
   height: auto;
 }
 .banner-section .banner-wrapper .banner-content .countdown .clock-item .count-number {
-  background: #df01ae;
+  background: #007bb5;
   color: #fff;
   font-size: 30px;
   font-weight: 700;
@@ -2795,7 +2802,7 @@ ul li {
   border-radius: 0 0 4px 4px;
 }
 .banner-section .banner-wrapper .banner-content h1 {
-  text-shadow: 2px 2px 0 #df01ae;
+  text-shadow: 2px 2px 0 #007bb5;
   font-style: italic;
   line-height: 1.286;
   margin-bottom: 18px;
@@ -2908,7 +2915,7 @@ ul li {
 /*Sponsor sectin start here*/
 .sponsor-section .all-sponsor {
   max-width: 960px;
-  margin: 0 auto;
+  margin: auto;
 }
 .sponsor-section .all-sponsor .platinum-sponsor,
 .sponsor-section .all-sponsor .gold-sponsor,
@@ -2916,7 +2923,7 @@ ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 30px;
 }
-@media (min-width: 768px) {
+@media (min-width: 40px) {
   .sponsor-section .all-sponsor .platinum-sponsor,
 .sponsor-section .all-sponsor .gold-sponsor,
 .sponsor-section .all-sponsor .silver-sponsor {
@@ -2930,7 +2937,7 @@ ul li {
 /*Sponsor sectin end here*/
 /*======== Gift Sectin start here =========*/
 .event-gift-section .image-part:after {
-  background: url(../images/shape/01.png);
+  background: url();
   width: 200px;
   height: 200px;
   background-size: cover;
@@ -4902,7 +4909,7 @@ ul li {
 }
 .contact-form-wrapper .contact-form form.comment-form input[type=text]:focus-visible,
 .contact-form-wrapper .contact-form form.comment-form [type=email]:focus-visible {
-  outline: 1px solid rgba(223, 1, 174, 0.5);
+  outline: 1px solid rgba(0, 0, 0, 0.5);
 }
 .contact-form-wrapper .contact-form form.comment-form textarea {
   color: #fff;
@@ -4981,7 +4988,7 @@ ul li {
 
 /*Footer section start here*/
 footer {
-  background-color: #00102e;
+  background-color: whitesmoke;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -4992,7 +4999,7 @@ footer h4,
 footer h5,
 footer h6,
 footer a {
-  color: #fff;
+  color: black;
 }
 @media (max-width: 991px) {
   footer .footer-top {
@@ -5001,7 +5008,7 @@ footer a {
 }
 @media (min-width: 992px) {
   footer .footer-top {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(247, 7, 7, 0.1);
   }
   footer .footer-top .col-12 {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -5035,6 +5042,7 @@ footer .footer-top .footer-top-item .lab-inner {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    
   }
 }
 footer .footer-top .footer-top-item .lab-inner .lab-thumb {
@@ -5050,7 +5058,7 @@ footer .footer-top .footer-top-item .lab-inner .lab-content {
   text-align: center;
 }
 footer .footer-top .footer-top-item .lab-inner .lab-content span {
-  color: #fff;
+  color: black;
 }
 footer .footer-middle .footer-middle-item-wrapper .footer-middle-item {
   margin-bottom: 40px;
@@ -5085,7 +5093,7 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-c
   transform: scale(1.05);
 }
 footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget:hover .lab-content h6 a {
-  color: #df01ae;
+  color: #1769ff;
 }
 footer .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content p {
   margin-bottom: 25px;
@@ -5100,7 +5108,7 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item
   outline: none;
   border: none;
   margin-top: 15px;
-  background: #df01ae;
+  background: #1769ff;
   color: #fff;
 }
 footer .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item-content form button i {
@@ -5108,7 +5116,7 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item-3 .fm-item
   margin-left: 5px;
 }
 footer .footer-bottom {
-  background: #00163f;
+  background: white;
 }
 footer .footer-bottom .footer-bottom-content {
   padding: 38px 0;
@@ -5117,7 +5125,7 @@ footer .footer-bottom .footer-bottom-content p {
   margin: 0;
 }
 footer .footer-bottom .footer-bottom-content p a {
-  color: #df01ae;
+  color: #1769ff;
   font-weight: 700;
 }
 

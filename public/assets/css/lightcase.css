@@ -50,44 +50,44 @@
   content: '\e800';
 }
 
-.menu-iboton {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: white;
-  border: none;
-  position: relative;
-  color: #ff69b4;
-  font-weight: bold;
-  text-transform: uppercase;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 10px 10px 10px 2px rgba(255, 105, 180, 0.7);
-  transition: box-shadow 0.3s; 
-  
+.menu-aboton-two {
+  margin: 10px;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 22px;
+  text-transform: capitalize;
 }
 
-.menu-iboton:hover {
-  box-shadow: 15px 15px 15px 3px rgba(255, 105, 180, 0.7); 
+.menu-aboton-tree {
+  margin: 10px;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 22px;
+  text-transform: capitalize;
 }
+
 
 .menu-aboton {
+  margin: 10px;
   display: inline-block;
   padding: 6px 12px; /* Ajusta el tamaño del botón */
-  background-color: white;
+  background-color:   #3782d2;
   border: none;
   position: relative;
-  color: #ff69b4;
+  color: white;
   font-weight: bold;
   text-transform: uppercase;
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 4px 4px 6px 2px rgba(135, 206, 235, 0.7); /* Sombra de color celeste más pequeña */
+  box-shadow: 4px 4px 6px 2px rgba(18, 92, 202, 0.7); /* Sombra de color celeste más pequeña */
   transition: box-shadow 0.3s; /* Añade una transición a la sombra */
   /* Añade más estilos según sea necesario */
 }
 
 .menu-aboton:hover {
-  box-shadow: 6px 6px 8px 3px rgba(135, 206, 235, 0.7); /* Ajusta la sombra al pasar el mouse */
+  box-shadow: 6px 6px 8px 3px rgba(18, 92, 202, 0.7); /* Ajusta la sombra al pasar el mouse */
 }
 
 
