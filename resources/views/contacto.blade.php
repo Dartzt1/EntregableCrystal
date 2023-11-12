@@ -1,6 +1,8 @@
 @extends("Layouts.layout")
 @section('title', 'Crystal Pass | Contacto')
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/x-icon/Logo Crystal.ico">
 
+<link rel="stylesheet" href="assets/css/style.css">
 <x-c-navegacion></x-c-navegacion>
 
 <x-c-nosotrosBaner>
@@ -89,26 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact-bottom">
-            <div class="contac-bottom">
-                <div class="row justify-content-center g-0">
-                    <div class="col-12">
-                        <div class="location-map">
-                            <div id="map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.227736753981!2d90.38698831452395!3d23.739256984594892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b85c740f17d1%3A0xdd3daab8c90eb11f!2sCodexCoder!5e0!3m2!1sbn!2sbd!4v1610134370994!5m2!1sbn!2sbd"
-                                    allowfullscreen=""></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
-    <!-- Contact Us Section ENding Here -->
-
-
 
 <x-c-ubicacion></x-c-ubicacion>
 <x-c-creditos></x-c-creditos>

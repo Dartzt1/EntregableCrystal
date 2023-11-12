@@ -333,10 +333,6 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-c
   padding-bottom: 20px;
 }
 
-#map {
-	height: 500px;
-	width: 100%;
-}
 
 * {
   margin: 0;
@@ -1484,7 +1480,7 @@ ul li {
     width: 35%;
     height: 100%;
     z-index: -1;
-    background-color: #00102e;
+
   }
 }
 @media (min-width: 992px) {
@@ -3650,6 +3646,9 @@ ul li {
 
 .blog-page .section-wrapper {
   margin-bottom: 0;
+  background-color: rgba(87, 60, 61, 0.5);
+  border-radius: 10px;
+  padding: 40px;
 }
 .blog-page .section-wrapper .post-item-2 .post-inner:hover {
   -webkit-transform: translateY(0px);
@@ -4820,7 +4819,7 @@ ul li {
   width: 100%;
   padding: 30px 25px;
   margin-bottom: 25px;
-  background: #fff;
+  background: red;
   box-shadow: 0 5px 5px rgba(136, 136, 136, 0.05);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -4894,7 +4893,7 @@ ul li {
   background: rgba(255, 255, 255, 0.1);
   width: 100%;
   margin-bottom: 30px;
-  color: #fff;
+  color: #ff0000;
   border-radius: 4px;
 }
 .contact-form-wrapper .contact-form form.comment-form input[type=text]::placeholder,
@@ -4934,6 +4933,9 @@ ul li {
 
 .contact-info-wrapper {
   padding-left: 30px;
+  background-color: rgba(87, 60, 61, 0.5);
+  border-radius: 5px;
+  padding: 50px;
 }
 @media (max-width: 991px) {
   .contact-info-wrapper {
@@ -4973,17 +4975,20 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background-color: red;
   }
   .contact-info-wrapper .contact-info-content .contact-info-item .contact-info-inner .contact-info-thumb {
     margin-bottom: 0;
     margin-right: 15px;
+    
   }
 }
 .contact-info-wrapper .contact-info-content .contact-info-item .contact-info-inner .contact-info-thumb {
   margin-bottom: 15px;
+  
 }
 .contact-info-wrapper .contact-info-content .contact-info-item .contact-info-inner .contact-info-details span {
-  color: #fff;
+  color: white;
 }
 
 /*Footer section start here*/
@@ -5132,3 +5137,4 @@ footer .footer-bottom .footer-bottom-content p a {
 /*Footer section End here*/
 
 /*# sourceMappingURL=style.css.map */
+
