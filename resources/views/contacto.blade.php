@@ -19,7 +19,9 @@
                         <article class="contact-form-wrapper">
                             <div class="contact-form">
                                 <h4>Dudas?</h4>
-                                <p class="mb-5">C</p>
+                                <p class="mb-5">Comunicate con nosostros para poderte ayudarte. (quejas o sugerencias comunicarse enviando un 
+                                    mensaje menete el formulario)
+                                </p>
                                 <form action="#" method="POST" id="commentform" class="comment-form">
                                     <input type="text" name="name" class="" placeholder="Name*">
                                     <input type="email" name="email" class="" placeholder="Email*">
