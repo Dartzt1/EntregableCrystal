@@ -34,7 +34,9 @@ return [
     'google' => [
         'client_id' => env('GOOGLE_CLIENT_ID'),
         'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => 'http://entregable_crystal.test/auth/callback-url',
+        'redirect' => 'http://entregablecrystalpass.test.org/auth/callback',
+
+        
     ],
 
 ];

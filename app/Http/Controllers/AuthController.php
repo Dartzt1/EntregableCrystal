@@ -20,22 +20,22 @@ class AuthController extends Controller
     {
         $fecha = Carbon::now();
         $userGoogle = Socialite::driver('google')->user();
+
+        // dd($userGoogle);
     
-    dd('userGoogle');
- 
-    /*$user = User::updateOrCreate([
-        'google_id' => $userGoogle->id,
-    ], [
-        'name' => $userGoogle->name,
-        'email' => $userGoogle->email,
-        'email_verified_at' => $fecha,
-        'google_token' => $userGoogle->token,
+        $user = User::updateOrCreate(
+            ['google_id' => $userGoogle->id],
+            [
+                'name' => $userGoogle->name,
+                'email' => $userGoogle->email,
+                'email_verified_at' => $fecha,
+                'google_id' => $userGoogle->id,
+                'google_token' => $userGoogle->token,
+            ]
+        );
 
-    ]);
- 
-    Auth::login($user);
- 
-    return redirect('/dashboard');*/
-;    }
-};
+        Auth::login($user);
 
+        return redirect('/dashboard');
+    }
+}
