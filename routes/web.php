@@ -34,6 +34,8 @@ Route::middleware([
     Route::get('/profile', [UsuarioController::class, 'profile']);
 });
 
+Route::get('/auth/redirect',[AuthController::class, 'redirect']);
+Route::get('/auth/callback',[AuthController::class, 'callback']);
 
 Auth::routes();
 
