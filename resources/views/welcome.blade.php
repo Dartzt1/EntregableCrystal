@@ -1,6 +1,7 @@
 @extends("Layouts.layout")
 @section('title', 'Crystal Pass | Inicio')
 
+
 <x-c-navegacion></x-c-navegacion>
 <x-c-baner></x-c-baner>
 <x-c-eventos></x-c-eventos>

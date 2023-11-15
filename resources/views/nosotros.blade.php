@@ -6,7 +6,7 @@
  <!-- logo -->
  <link rel="shortcut icon" type="image/x-icon" href="assets/images/x-icon/Logo Crystal.ico">
 
- <link rel="stylesheet" href="assets/css/style.css">
+ <link rel="stylesheet" href="public/assets/css/style.css">
 <x-c-navegacion></x-c-navegacion>
 
 <x-c-nosotrosBaner>
