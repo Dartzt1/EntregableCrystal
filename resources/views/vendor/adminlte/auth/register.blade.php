@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +33,7 @@
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="images/register.jpg" alt="sing up image" class="blur-border ampliar-imagen"></figure>
-                        <a href="#" class="signup-image-link">Create an account</a>
+                        <a href="/login" class="signup-image-link animated-link">Iniciar sesion</a>
                     </div>
 
                     <div class="signin-form">
@@ -98,8 +98,8 @@
                         <div class="social-login">
                             <span class="social-label">Or login with</span>
                             <ul class="socials">
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                                <!--<li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                                <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>-->
                                 <li><a href="{{ url('/auth/redirect') }}"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
                             </ul>
                         </div>
