@@ -38,6 +38,7 @@ Route::middleware([
     Route::get('/profile', [UsuarioController::class, 'profile']);
     Route::resource('/client', ClienteController::class)->names('cliente');
     Route::resource('/ticket', TicketController::class)->names('ticket');
+    
 });
 
 Route::get('/auth/redirect', [AuthController::class, 'redirect']);
