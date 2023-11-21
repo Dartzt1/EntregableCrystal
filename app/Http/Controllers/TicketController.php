@@ -12,10 +12,10 @@ class TicketController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
-        //
-        return view('sistema.addTicket');
-    }
+{
+    $tickets = Ticket::all();
+    return view('sistema.listTicket', compact('tickets'));
+}
 
     /**
      * Show the form for creating a new resource.
@@ -37,7 +37,8 @@ class TicketController extends Controller
             'fecha' => 'required|date',
             'nument' => 'required|string',
             'proved' => 'required|string|max:75',
-            'tipoeven' => 'required|string|max:75',
+            'tipoeven' => 'required|string|max:5000',
+            'img' => 'required'
             
         ]); 
 
@@ -48,6 +49,7 @@ class TicketController extends Controller
         $ticket->proved = $request->input('proved');
         $ticket->tipoeven = $request->input('tipoeven');
         $ticket->direccion = $request->input('direccion');
+        $ticket->img = $request->input('img');
 
         $ticket->save();
         return back() ->with('message','ok');

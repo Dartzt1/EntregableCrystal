@@ -65,15 +65,23 @@
                     </x-slot>
                 </x-adminlte-input>
 
-                <x-adminlte-select2 name="tipoeven" label="TIPO DE EVENTO" igroup-size="lg" label-class="text-lightblue"
-                                    data-placeholder="Selecciona tipo de evento">
+                <x-adminlte-input type="text" name="tipoeven" label="TIPO DE EVENTO" placeholder="Ingrese el tipo de evento" label-class="text-lightblue" value="{{old('tipoeven')}}">
                     <x-slot name="prependSlot">
-                        <div class="input-group-text bg-gradient-info">
-                          <i class="fas fa-star"></i>
+                        <div class="input-group-text">
+                        <i class="fas fa-star"></i>
                         </div>
                     </x-slot>
-                    <x-adminlte-options :options="['' => 'Selecciona tipo de evento', 'Conciertos', 'Teatro', 'Entretenimiento']"/>
-                </x-adminlte-select2>
+                </x-adminlte-input>
+
+
+
+<x-adminlte-input-file name="img" igroup-size="sm" placeholder="Choose a file...">
+    <x-slot name="prependSlot">
+        <div class="input-group-text bg-lightblue">
+            <i class="fas fa-upload"></i>
+        </div>
+    </x-slot>
+</x-adminlte-input-file>
 
 
             <x-adminlte-textarea name="direccion" label="DIRECCION" rows=5 label-class="text-lightblue" igroup-size="sm" placeholder="Inserte su dirección">

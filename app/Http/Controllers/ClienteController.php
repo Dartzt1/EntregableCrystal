@@ -48,6 +48,7 @@ class ClienteController extends Controller
         $cliente->email = $request->input('email');
         $cliente->telefono = $request->input('telefono');
         $cliente->direccion = $request->input('direccion');
+        
 
         $cliente->save();
         return back() ->with('message','ok');

@@ -11,7 +11,7 @@
 <div class="card">
     <div class="card-body">
         @php
-        $heads = ['ID', 'Apellidos', 'Nombres', ['label' => 'Telefono', 'width' => 40], ['label' => 'Actions', 'no-export' => true, 'width' => 10],];
+        $heads = ['ID', 'Nombre Evento', 'Fecha', 'Numero de entradas', 'Tipo de evento', 'Proveedor', 'img', ['label' => 'Direccion', 'width' => 40], ['label' => 'Actions', 'no-export' => true, 'width' => 10],];
 
         $btnEdit = '<button class="btn btn-xs btn-default text-primary mx-1 shadow" title="Edit">
             <i class="fa fa-lg fa-fw fa-pen"></i>
@@ -33,12 +33,18 @@
 
         {{-- Minimal example / fill data using the component slot --}}
         <x-adminlte-datatable id="table1" :heads="$heads" :config="$config">
-        @foreach($clientes as $cliente)
+        @foreach($tickets as $tickets)
         <tr>
-        <td>{{ $cliente->id }}</td>
-        <td>{{ $cliente->apellido }}</td>
-        <td>{{ $cliente->nombre }}</td>
-        <td>{{ $cliente->telefono }}</td>
+        <td>{{ $tickets->id }}</td>
+        <td>{{ $tickets->nomeven }}</td>
+        <td>{{ $tickets->fecha }}</td>
+        <td>{{ $tickets->nument }}</td>
+        <td>{{ $tickets->tipoeven }}</td>
+        <td>{{ $tickets->proved }}</td>
+        <td>{{ $tickets->img }}</td>
+        <td>{{ $tickets->direccion }}</td>
+
+
         <td>{!! $btnEdit !!} {!! $btnDelete !!} {!! $btnDetails !!}</td>
         </tr>
 @endforeach

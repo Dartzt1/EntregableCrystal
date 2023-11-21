@@ -32,7 +32,7 @@
             <div class="container">
                 <div class="signin-content">
                     <div class="signin-image">
-                        <figure><img src="images/register.jpg" alt="sing up image" class="blur-border ampliar-imagen"></figure>
+                        <figure><img src="images/register.jpg" alt="sing up image"></figure>
                         <a href="/login" class="signup-image-link animated-link">Iniciar sesion</a>
                     </div>
 
