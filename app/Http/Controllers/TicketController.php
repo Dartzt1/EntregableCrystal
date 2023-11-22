@@ -85,6 +85,8 @@ class TicketController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $ticket = Ticket::find($id);
+        $ticket->delete();
+        return back();
     }
 }

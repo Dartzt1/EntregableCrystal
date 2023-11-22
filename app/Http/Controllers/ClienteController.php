@@ -51,7 +51,7 @@ class ClienteController extends Controller
         
 
         $cliente->save();
-        return back() ->with('message','ok');
+        return back(sistema.listCliente)->with('message','ok');
         
     }
 
@@ -68,7 +68,8 @@ class ClienteController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $cliente = Client::find($id);
+        return view('sistema.editCliente',compact('cliente'));
     }
 
     /**
@@ -76,7 +77,18 @@ class ClienteController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $cliente = Client::find($id);
+
+        $cliente->dni = $request->input('dni');
+        $cliente->apellido = $request->input('apellido');
+        $cliente->nombre = $request->input('nombre');
+        $cliente->email = $request->input('email');
+        $cliente->telefono = $request->input('telefono');
+        $cliente->direccion = $request->input('direccion');
+
+        $cliente->save();
+        return back()->with('message','Actualizado Correctamente');
+
     }
 
     /**
@@ -84,6 +96,8 @@ class ClienteController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $cliente = Client::find($id);
+        $cliente->delete();
+        return back();
     }
 }

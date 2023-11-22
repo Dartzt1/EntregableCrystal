@@ -43,9 +43,13 @@
         <td>{{ $tickets->proved }}</td>
         <td>{{ $tickets->img }}</td>
         <td>{{ $tickets->direccion }}</td>
-
-
-        <td>{!! $btnEdit !!} {!! $btnDelete !!} {!! $btnDetails !!}</td>
+        <td>{!! $btnEdit !!}
+            <form style='display: inline' action="{{route('ticket.destroy',$tickets)}}" method="post" class="formEliminar">
+                @csrf
+                @method('delete')
+                {!! $btnDelete !!} 
+            </form>   
+            {!! $btnDetails !!}</td>
         </tr>
 @endforeach
         </x-adminlte-datatable>
@@ -59,6 +63,24 @@
 
 @section('js')
 <script>
-console.log('Hi!');
+$(document).ready(function(){
+        $('.formEliminar').submit(function(e) {
+            e.preventDefault();
+            Swal.fire({
+                title: "Estas seguro?",
+                text: "Se va ha eliminar un registro!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Si, Eliminalo"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    this.submit();
+                }
+            });
+        })
+    
+})
 </script>
 @stop
