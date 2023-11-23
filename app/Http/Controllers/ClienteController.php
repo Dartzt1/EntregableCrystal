@@ -51,7 +51,7 @@ class ClienteController extends Controller
         
 
         $cliente->save();
-        return back(sistema.listCliente)->with('message','ok');
+        return back()->with('message','ok');
         
     }
 
