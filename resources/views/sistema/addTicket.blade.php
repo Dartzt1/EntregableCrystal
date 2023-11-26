@@ -18,7 +18,7 @@
     @endphp 
     <div class="card">
         <div class="card-body">
-            <form action="{{route('ticket.store')}}" method="post">
+            <form action="{{ route('ticket.store') }}" method="post" enctype="multipart/form-data">
                 @csrf
 
                 <x-adminlte-input type="text" name="nomeven" label="NOMBRE DE EVENTO" placeholder="Ingrese nombre de evento" label-class="text-lightblue" value="{{old('nomeven')}}">
@@ -39,8 +39,7 @@
                     ];
                 @endphp
 
-                <x-adminlte-input-date name="fecha" label="INGRESE FECHA DE EVENTO" igroup-size="sm"
-                                       :config="$config" placeholder="AÑO-MES-DIA HORA:MINUTO">
+                <x-adminlte-input-date name="fecha" label="INGRESE FECHA DE EVENTO" igroup-size="sm" :config="$config" placeholder="YYYY-MM-DD HH:mm">
                     <x-slot name="appendSlot">
                         <div class="input-group-text bg-dark">
                             <i class="fas fa-calendar-day"></i>
@@ -75,14 +74,14 @@
 
 
 
-<x-adminlte-input-file name="img" igroup-size="sm" placeholder="Choose a file...">
-    <x-slot name="prependSlot">
-        <div class="input-group-text bg-lightblue">
-            <i class="fas fa-upload"></i>
-        </div>
-    </x-slot>
-</x-adminlte-input-file>
-
+                <x-adminlte-input-file name="img" igroup-size="sm" label="IMAGEN DE EVENTO" placeholder="Buscar Imagen" label-class="text-lightblue" @change="previewImage" accept="image/*">
+                    <x-slot name="prependSlot">
+                        <div class="input-group-text bg-lightblue">
+                            <i class="fas fa-upload"></i>
+                        </div>
+                    </x-slot>
+                </x-adminlte-input-file>
+                
 
             <x-adminlte-textarea name="direccion" label="DIRECCION" rows=5 label-class="text-lightblue" igroup-size="sm" placeholder="Inserte su dirección">
             <x-slot name="prependSlot">

@@ -60,7 +60,15 @@ class ClienteController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $cliente = Client::find($id);
+
+    // Verifica si se encontró el ticket
+    if ($cliente) {
+        return view('sistema.showCliente', compact('cliente'));
+    } else {
+        // Puedes personalizar el comportamiento si el ticket no se encuentra
+        return redirect()->route('sistema.listTicket')->with('error', 'Ticket no encontrado');
+    }
     }
 
     /**

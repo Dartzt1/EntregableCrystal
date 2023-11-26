@@ -3,16 +3,18 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-<h1>Lista de cliente</h1>
+<h1>Administrador de Permisos</h1>
 @stop
 
 @section('content')
 <p>Aquì se muestra la lista de clientes</p>
 <div class="card">
+    <div class="card-header">
+        <x-adminlte-button label="Nuevo" theme="primary" icon="fas fa-key" class="float-right" data-toggle="modal" data-target="#modalPurple"/>
+    </div>
     <div class="card-body">
         @php
-        $heads = ['ID', 'DNI', 'Apellidos', 'Nombres', 'Email','Direccion', ['label' => 'Telefono', 'width' => 30],  ['label' => 'Actions',
-        'no-export' => true, 'width' => 10], ];
+        $heads = ['ID', 'PERMISO', ['label' => 'Actions','no-export' => true, 'width' => 20]];
 
         $btnEdit = '';
         $btnDelete = '<button type="submit" class="mx-1 shadow btn btn-xs btn-default text-danger" title="Delete">
@@ -32,37 +34,46 @@
 
         {{-- Minimal example / fill data using the component slot --}}
         <x-adminlte-datatable id="table1" :heads="$heads" :config="$config">
-            @foreach($clientes as $cliente)
+            @foreach($permisos as $permiso)
             <tr>
-                <td>{{ $cliente->id }}</td>
-                <td>{{ $cliente->dni }}</td>
-                <td>{{ $cliente->apellido }}</td>
-                <td>{{ $cliente->nombre }}</td>
-                <td>{{ $cliente->email }}</td>
-                <td>{{ $cliente->direccion }}</td>
-                <td>{{ $cliente->telefono }}</td>
+                <td>{{ $permiso->id }}</td>
+                <td>{{ $permiso->name }}</td>
                 
                 <td>
-                    <a href="{{route('cliente.edit',$cliente)}}" class="mx-1 shadow btn btn-xs btn-default text-primary" title="Edit">
+                    <a href="{{route('permisos.edit',$permiso)}}" class="mx-1 shadow btn btn-xs btn-default text-primary" title="Edit">
                         <i class="fa fa-lg fa-fw fa-pen"></i>
                     </a>
 
 
-                    <form style='display: inline' action="{{ route('cliente.destroy', $cliente)}}" method="post"
+                    <form style='display: inline' action="{{ route('permisos.destroy', $permiso)}}" method="post"
                         class="formEliminar">
                         @csrf
                         @method('delete')
                         {!! $btnDelete !!}
                     </form>
-                    <a href="{{route('cliente.show',$cliente)}}" class="mx-1 shadow btn btn-xs btn-default text-primary" title="Show">
-                        <i class="fa fa-lg fa-fw fa-eye"></i>
-                    </a>
+                    {!! $btnDetails !!}
                 </td>
             </tr>
             @endforeach
         </x-adminlte-datatable>
     </div>
 </div>
+
+
+<x-adminlte-modal id="modalPurple" title="Nuevo Permiso" theme="primary"
+    icon="fas fa-bolt" size='lg' disable-animations>
+    <form actions="{{route('permisos.store')}}" method="post">
+        @csrf
+        <div class="row">
+            <x-adminlte-input name="nombre" label="Nombre" placeholder="Ingrese su permiso..."
+                fgroup-class="col-md-6" disable-feedback/>
+        </div>
+        <x-adminlte-button type="submit" label="Guardar" theme="success" icon="fas fa-thumbs-up"/>
+    </form>
+</x-adminlte-modal>
+
+
+
 @stop
 
 @section('css')

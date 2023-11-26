@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\RoleController;
 use App\Http\Controllers\TicketController;
-
+use App\Http\Controllers\PermisoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,8 @@ Route::middleware([
     Route::get('/profile', [UsuarioController::class, 'profile']);
     Route::resource('/client', ClienteController::class)->names('cliente');
     Route::resource('/ticket', TicketController::class)->names('ticket');
+    Route::resource('/roles', RoleController::class)->names('roles');
+    Route::resource('/permisos', PermisoController::class)->names('permisos');
     
 });
 

@@ -14,6 +14,7 @@
             <form action="{{route('cliente.update', $cliente)}}" method="post">
             @csrf
             @method('PUT')
+            
             <x-adminlte-input type="text" name="dni" label="DNI" label-class="text-lightblue" value="{{$cliente->dni}}">
             <x-slot name="prependSlot">
                 <div class="input-group-text">
