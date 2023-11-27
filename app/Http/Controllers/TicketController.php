@@ -38,7 +38,7 @@ class TicketController extends Controller
             'nument' => 'required|string',
             'proved' => 'required|string|max:75',
             'tipoeven' => 'required|string|max:5000',
-            'img' => 'required'
+            'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
             
         ]); 
 
@@ -49,7 +49,9 @@ class TicketController extends Controller
         $ticket->proved = $request->input('proved');
         $ticket->tipoeven = $request->input('tipoeven');
         $ticket->direccion = $request->input('direccion');
-        $ticket->img = $request->input('img');
+        $imagePath = $request->file('img')->store('public/images');
+        $ticket->img_path = basename($imagePath);
+
 
         $ticket->save();
         return back() ->with('message','ok');
@@ -59,17 +61,29 @@ class TicketController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
-    {
-        //
+// TicketController.php
+
+public function show(string $id)
+{
+    $ticket = Ticket::find($id);
+
+    // Verifica si se encontró el ticket
+    if ($ticket) {
+        return view('sistema.showTicket', compact('ticket'));
+    } else {
+        // Puedes personalizar el comportamiento si el ticket no se encuentra
+        return redirect()->route('sistema.listTicket')->with('error', 'Ticket no encontrado');
     }
+}
+
 
     /**
      * Show the form for editing the specified resource.
      */
     public function edit(string $id)
     {
-        //
+        $ticket = Ticket::find($id);
+        return view('sistema.editTicket',compact('ticket'));
     }
 
     /**
@@ -77,7 +91,22 @@ class TicketController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $ticket = Ticket::find($id);
+
+        $ticket->nomeven = $request->input('nomeven');
+        $ticket->fecha = $request->input('fecha');
+        $ticket->nument = $request->input('nument');
+        $ticket->proved = $request->input('proved');
+        $ticket->tipoeven = $request->input('tipoeven');
+        $ticket->direccion = $request->input('direccion');
+        if ($request->hasFile('img')) {
+            $imagePath = $request->file('img')->store('public/images');
+            $ticket->img_path = basename($imagePath);
+        }
+
+        $ticket->save();
+        return back()->with('message','Actualizado Correctamente');
+
     }
 
     /**

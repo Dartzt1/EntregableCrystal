@@ -21,6 +21,7 @@
     "dependencies": {
         "bootstrap": "^5.3.2",
         "composer": "^4.1.0",
+        "lightbox2": "^2.11.4",
         "node": "^21.1.0",
         "php": "^1.0.2",
         "run": "^1.4.0"

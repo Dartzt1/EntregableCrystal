@@ -19,14 +19,12 @@ return new class extends Migration
             $table->string('proved',75);
             $table->string('tipoeven',75);
             $table->string('direccion',5000)->nullable();
-            $table->string('img',75);
+            $table->text('img_path')->nullable();
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
+
     public function down(): void
     {
         Schema::dropIfExists('tickets');

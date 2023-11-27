@@ -311,16 +311,22 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
+        ['header' => 'USUARIOS'],
         [
-            'text'        => 'pages',
-            'url'         => 'admin/pages',
+            'text'        => 'Roles',
+            'route'         => 'roles.index',
             'icon'        => 'far fa-fw fa-file',
-            'label'       => 4,
-            'label_color' => 'success',
         ],
-        ['header' => 'account_settings'],
+        
         [
-            'text' => 'profile',
+            'text'        => 'Permisos',
+            'route'         => 'permisos.index',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+
+        ['header' => 'CONFIGURACION DE CUENTA'],
+        [
+            'text' => 'Perfil',
             'url'  => 'profile',
             'icon' => 'fas fa-fw fa-user',
         ],
@@ -387,22 +393,22 @@ return [
         //         ],
         //     ],
         // ],
-        ['header' => 'labels'],
-        [
-            'text'       => 'important',
-            'icon_color' => 'red',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'warning',
-            'icon_color' => 'yellow',
-            'url'        => '#',
-        ],
-        [
-            'text'       => 'information',
-            'icon_color' => 'cyan',
-            'url'        => '#',
-        ],
+        // ['header' => 'labels'],
+        // [
+        //     'text'       => 'important',
+        //     'icon_color' => 'red',
+        //     'url'        => '#',
+        // ],
+        // [
+        //     'text'       => 'warning',
+        //     'icon_color' => 'yellow',
+        //     'url'        => '#',
+        // ],
+        // [
+        //     'text'       => 'information',
+        //     'icon_color' => 'cyan',
+        //     'url'        => '#',
+        // ],
     ],
 
     /*
