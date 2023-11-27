@@ -48,7 +48,7 @@
                                 <div class="contact-info-item">
                                     <div class="contact-info-inner">
                                         <div class="contact-info-thumb">
-                                            <img src="assets/images/contact/01.png" alt="address">
+                                            <img src="assets/images/contact/ubicacion.png" alt="address">
                                         </div>
                                         <div class="contact-info-details">
                                             <span class="fw-bold">Direccion de nuestra Oficina</span>
@@ -59,7 +59,7 @@
                                 <div class="contact-info-item">
                                     <div class="contact-info-inner">
                                         <div class="contact-info-thumb">
-                                            <img src="assets/images/contact/02.png" alt="address">
+                                            <img src="assets/images/contact/celular.png" alt="address">
                                         </div>
                                         <div class="contact-info-details">
                                             <span class="fw-bold">Numero de contacto</span>
@@ -70,7 +70,7 @@
                                 <div class="contact-info-item">
                                     <div class="contact-info-inner">
                                         <div class="contact-info-thumb">
-                                            <img src="assets/images/contact/03.png" alt="address">
+                                            <img src="assets/images/contact/correo.png" alt="address">
                                         </div>
                                         <div class="contact-info-details">
                                             <span class="fw-bold">Correo</span>
@@ -81,7 +81,7 @@
                                 <div class="contact-info-item">
                                     <div class="contact-info-inner">
                                         <div class="contact-info-thumb">
-                                            <img src="assets/images/contact/04.png" alt="address">
+                                            <img src="assets/images/contact/web.png" alt="address">
                                         </div>
                                         <div class="contact-info-details">
                                             <span class="fw-bold">Visitanos en</span>

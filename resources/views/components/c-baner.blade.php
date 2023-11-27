@@ -1,4 +1,3 @@
- <!-- ==========Banner========== -->
  <section class="banner-section">
     <div class="container">
         <div class="banner-wrapper shape-a">
@@ -35,4 +34,3 @@
         </div>
     </div>
 </section>
-<!-- ==========Banner ========== -->

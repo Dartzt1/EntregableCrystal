@@ -1,12 +1,6 @@
 @extends("Layouts.layout")
 @section('title', 'Crystal Pass | Nosotros')
 
-   
-
- <!-- logo -->
- <link rel="shortcut icon" type="image/x-icon" href="assets/images/x-icon/Logo Crystal.ico">
-
- <link rel="stylesheet" href="assets/css/style.css">
 <x-c-navegacion></x-c-navegacion>
 
 <x-c-nosotrosBaner>
@@ -159,7 +153,7 @@
 
                         <div class="widget widget-post">
                             <div class="widget-header">
-                                <h5>Proxmos eventos</h5>
+                                <h5>Proximos eventos</h5>
                             </div>
                             <ul class="lab-ul widget-wrapper">
                                 <li class="d-flex flex-wrap justify-content-between">
