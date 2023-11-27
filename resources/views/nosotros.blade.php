@@ -19,7 +19,7 @@
                         <div class="post-item-2">
                             <div class="post-inner">
                                 <div class="post-thumb rounded">
-                                    <img src="assets/images/blog/nosotros.jpg" alt="blog">
+                                    <img src="assets/images/blog/nosotros.jpg" width="100%" alt="blog">
                                 </div>
                                 <div class="post-content">
                                     <h3>Un poco de nosotros</h3>
@@ -43,7 +43,7 @@
                                         en la resolución de problemas en el mundo real y mejorar la calidad de vida de las personas.</p>
 
                                     <div class="post-thumb mb-30 rounded">
-                                        <img src="assets/images/blog/huancayo-1.jpg" alt="blog">
+                                        <img src="assets/images/blog/huancayo-1.jpg" width="100%" alt="blog">
                                     </div>
                                    
                                     <div class="tags-area">
@@ -71,7 +71,7 @@
 
                         <div class="authors rounded">
                             <div class="author-thumb">
-                                <img src="assets/images/blog/Dart.jpg" alt="author">
+                                <img src="assets/images/blog/Dart.jpg" width="100%" alt="author">
                             </div>
                             <div class="author-content">
                                 <h6>Brayan Solis</h6>
@@ -90,7 +90,7 @@
 
                         <div class="authors rounded">
                             <div class="author-thumb">
-                                <img src="assets/images/blog/Shyper.jpg" alt="author">
+                                <img src="assets/images/blog/Shyper.jpg" width="100%" alt="author">
                             </div>
                             <div class="author-content">
                                 <h6>Adriel Pilpa</h6>
