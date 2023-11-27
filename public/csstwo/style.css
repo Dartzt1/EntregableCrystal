@@ -1,90 +1,13 @@
-@charset "UTF-8";
-/*! @@@@@@@@@@@@@@@@@@@@@@
-Template Name: Kagont
-Template URI: https://themeforest.net/user/labartisan
-Author: LabArtisan
-Author URI: https://themeforest.net/user/labartisan
-Description: Description
-Version: 1.0.0
-Text Domain: Kagont
-Tags: bootstrap, program, event, event schedule, arrangment, event site, official event,corporate event,music concert.
-
-@@@@@@@@@@@@@@@@@@@@@@ */
-/* @@@@@@@@@@@@@@@@@@@@@@
->>> TABLE OF CONTENTS START:
-
-01. Extended CSS
-02. Normalize CSS
-03. Normalization CSS
-04. Global CSS
-05. Header
-06. Home Page all section CSS
-07. Blog Section & Blog pages CSS
-08. Shop Pages & Cart Pages CSS
-09. Gallery Page CSS
-10. Speaker CSs
-11. Contact CSS
-12. Footer Section CSS
 
 
-
-
->>> TABLE OF CONTENTS END:
-@@@@@@@@@@@@@@@@@@@@@@ */
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap");
-/* @@@@@@@@@@@@@  Extend Property  @@@@@@@@@@@@@@ */
-footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner, .contact-form-wrapper .contact-form form.comment-form, .contact-item, .gallery-section .grid .grid-item .grid-inner .grid-content, .shop-product-wrap .product-list-item, .shop-product-wrap .product-item .product-thumb .product-action-link,
-.shop-product-wrap .product-list-item .product-thumb .product-action-link, .shop-single .review .review-content .review-showing .client-review .review-form form .rating ul, .shop-single .review .review-content .review-showing .client-review .review-form form .rating, .shop-single .review .review-content .review-showing .content li .post-content .entry-meta .posted-on, .shop-single .review .review-content .review-showing .content li .post-content .entry-meta, .shop-single .review .review-nav, .shop-single .product-details .post-content form, .shop-cart .section-wrapper .cart-bottom .shiping-box .cart-overview ul li, .shop-cart .section-wrapper .cart-bottom .cart-checkout-box .cart-checkout, .shop-cart .section-wrapper .cart-bottom .cart-checkout-box, .shop-cart .section-wrapper .cart-top table tbody tr td.product-item, .comment-respond .add-comment .comment-form, .comments .comment-list .comment .com-content .com-title, .authors, .blog-single .section-wrapper .post-item-2 .post-inner .post-content .tags-section .tags, .blog-single .section-wrapper .post-item-2 .post-inner .post-content .tags-section, .about-section .section-wrapper .about-btn-grp, .banner-section .banner-wrapper .banner-content .event-sponsored, .banner-section .banner-wrapper .banner-content .countdown, .menu, .header-wrapper .menu-area .cart-ticket .cart-icon .cart-content .cart-list .cart-item .cart-inner .cart-details p, .header-wrapper .menu-area .cart-ticket .cart-icon .cart-content .cart-list .cart-item .cart-inner, .header-wrapper .menu-area .cart-ticket, .header-wrapper .menu-area, .header-wrapper, .account-form .form-group .checkgroup, .tags-social .social, .tags-social .tags, .paginations ul li a, .share, .tags, .tags-area, .single-quote, .coming-wrapper .event-count .rounded-circle, .widget.widget-tags ul.widget-wrapper, .pricing-item .pricing-inner .pricing-content .get-ticket a ul li.vat, .pricing-item .pricing-inner .pricing-content .get-ticket a ul, .speaker-item-2 .speaker-inner, .speaker-item .speaker-inner .speaker-content .spkr-content-details .social-icons, .speaker-item .speaker-inner, .page-header .page-header-content-area ul {
-  display: flex;
-  flex-wrap: wrap;
+.blur-border {
+  outline: 10px solid transparent; /* Ajusta el ancho del borde según sea necesario */
+  outline-offset: -10px; /* Ajusta el valor del desplazamiento según sea necesario */
+  filter: blur(10px); /* Ajusta el valor del desenfoque según sea necesario */
 }
-
-.scholar-single-section .section-wrapper .section-inner, .gallery-section .grid .grid-item .grid-inner, .shop-product-wrap .product-item .product-thumb,
-.shop-product-wrap .product-list-item .product-thumb, .shop-single .review .review-content .description .post-item .post-content ul li, .shop-single .review .review-content .review-showing .client-review .review-form .review-title h5, .shop-single .product-details .post-content form .select-product select, .shop-single .product-details .post-content form .select-product, .shop-single .product-details .product-thumb .gallery-top, .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping .outline-select select, .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping .outline-select, .post-item-2 .post-inner .post-content .meta-post p span, .post-item-2 .post-inner .post-content .qute-content blockquote, .post-item-2 .post-inner .post-content .more-com .text-btn, .post-item-2 .post-inner .post-thumb, .post-item-2 .post-inner .post-thumb-container, .event-gift-section .image-part, .about-section .about-image .play-btn i, .about-section .about-image, .menu-item-has-children > a, .header-bar, .header-wrapper .menu-area .cart-ticket .cart-icon .cart-content .cart-list .cart-item .cart-inner .cart-details, .header-wrapper .menu-area .cart-ticket .cart-icon a, .header-wrapper .menu-area .cart-ticket .cart-icon, .paginations ul li a, .post-item .post-inner .post-content .meta-post p span, .post-item .post-inner .post-thumb, .scrollToTop i, .relative, .lab-btn, .aside-bg, .widget.widget-search .search-wrapper, .pricing-item .pricing-inner .pricing-content .get-ticket a ul li.icon, .pricing-item .pricing-inner .pricing-content .facilites .facility-item span i, .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button .accor-header-inner .accor-thumb, .speaker-item-2 .speaker-inner .speaker-content .speaker-shape, .speaker-item .speaker-inner .speaker-thumb, .page-header .page-header-content-area ul li a, .page-header .page-header-content-area h4, .page-header .page-header-content-area, .page-header, .section-header h2 {
-  position: relative;
-}
-
-.gallery-section .grid .grid-item .grid-inner .grid-content, .gallery-section .grid .grid-item .grid-inner:before, .shop-product-wrap .product-item .product-thumb .product-action-link,
-.shop-product-wrap .product-list-item .product-thumb .product-action-link, .shop-product-wrap .product-item .product-thumb::after,
-.shop-product-wrap .product-list-item .product-thumb::after, .shop-single .review .review-content .description .post-item .post-content ul li::before, .shop-single .review .review-content .review-showing .client-review .review-form .review-title h5::after, .shop-single .review .review-content .review-showing .client-review .review-form .review-title h5::before, .shop-single .product-details .post-content form .select-product i, .shop-single .product-details .product-thumb .gallery-top .shop-navigation .shop-nav, .shop-single .product-details .product-thumb .gallery-top .shop-navigation, .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping .outline-select .select-icon, .post-item-2 .post-inner .post-content .meta-post p span::after, .post-item-2 .post-inner .post-content .qute-content blockquote::after, .post-item-2 .post-inner .post-content .qute-content blockquote::before, .post-item-2 .post-inner .post-content .more-com .text-btn i, .post-item-2 .post-inner .post-thumb .meta-date, .post-item-2 .post-inner .post-thumb .pluse_2::after, .post-item-2 .post-inner .post-thumb .pluse_2::before, .post-item-2 .post-inner .post-thumb .pluse_2, .post-item-2 .post-inner .post-thumb .play-btn, .post-item-2 .post-inner .post-thumb-container .thumb-nav, .event-gift-section .image-part:after, .about-section .about-image .play-btn, .menu-item-has-children > a::before, .menu-item-has-children > a::after, .header-bar span, .header-wrapper .menu-area .cart-ticket .cart-icon .cart-content .cart-list .cart-item .cart-inner .cart-details .close-btn, .header-wrapper .menu-area .cart-ticket .cart-icon .cart-content, .header-wrapper .menu-area .cart-ticket .cart-icon a span, .header-section, .post-item .post-inner .post-content .meta-post p span::after, .post-item .post-inner .post-thumb .meta-date, .overlay, .pluse_1::after, .pluse_1::before,
-.pluse_2::after,
-.pluse_2::before, .pluse_1,
-.pluse_2, .widget.widget-search .search-wrapper button, .pricing-item .pricing-inner .pricing-content .get-ticket a ul li.icon:after, .pricing-item .pricing-inner .pricing-content .facilites .facility-item span i:after, .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button.collapsed .accor-thumb .child-thumb-2, .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button.collapsed .accor-thumb .child-thumb, .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button .accor-header-inner .accor-thumb .child-thumb-2, .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button .accor-header-inner .accor-thumb .child-thumb, .speaker-item-2 .speaker-inner .speaker-content .speaker-shape .shape, .speaker-item .speaker-inner .speaker-thumb:after, .page-header .page-header-content-area ul li a::after, .page-header .page-header-content-area h4:after, .section-header h2:after {
-  position: absolute;
-  content: "";
-}
-
-footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-thumb, .shop-product-wrap .product-item .product-thumb,
-.shop-product-wrap .product-list-item .product-thumb, .widget .widget-header, .shop-single .review .review-content .review-showing .content li .post-thumb, .shop-single .product-details .product-thumb .gallery-thumbs .shop-item .shop-thumb, .shop-single .product-details, .shop-cart .section-wrapper .cart-bottom .cart-checkout-box .coupon, .comments .comment-list .comment .com-content, .post-item-2 .post-inner .post-thumb, .post-item-2 .post-inner .post-thumb-container, .banner-section,
-.schedule-section,
-.speakers-section,
-.sponsor-section,
-.footer-section, .sponsor-section .all-sponsor, .preloader, .post-item .post-inner .post-thumb, .lab-btn, .widget.recipe-categori, .widget.widget-instagram ul.widget-wrapper li a, .widget.widget-post ul.widget-wrapper li .post-thumb, .news-item .news-inner .news-thumb, .news-item .news-inner, .pricing-item .pricing-inner .pricing-content .get-ticket, .header-wrapper .menu-area .cart-ticket .cart-icon .cart-content .cart-list .cart-item .cart-inner .cart-details h6 a, .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button.collapsed .h7, .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button .accor-header-inner .h7, footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-content h6 a, .widget.widget-post ul.widget-wrapper li .post-content h6, .news-item .news-inner .news-content h6 a {
-  overflow: hidden;
-}
-
-.contact-form-wrapper .contact-form form.comment-form button.lab-btn, .shop-single .review .review-content .review-showing .client-review .review-form form button, .shop-single .review .review-nav li, .shop-single .product-details .post-content form button, .shop-single .product-details .product-thumb .gallery-top .shop-navigation .shop-nav, .shop-cart .section-wrapper .cart-bottom .cart-checkout-box .cart-checkout input[type=submit], .shop-cart .section-wrapper .cart-bottom .cart-checkout-box .coupon input[type=submit], .comment-respond .add-comment .comment-form .lab-btn, .header-bar, .lab-btn {
-  cursor: pointer;
-}
-
-footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-content .fm-item-widget .lab-inner .lab-content h6 a, .widget.widget-post ul.widget-wrapper li .post-content h6, .news-item .news-inner .news-content h6 a {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.header-wrapper .menu-area .cart-ticket .cart-icon .cart-content .cart-list .cart-item .cart-inner .cart-details h6 a, .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button.collapsed .h7, .schedule-pack .schedule-list .accordion-item .accordion-header .accordion-button .accor-header-inner .h7 {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
- 
-  text-overflow: ellipsis;
-}
-
-.comments .comment-list .comment .com-content .com-title, .header-wrapper .menu-area .cart-ticket .cart-icon .cart-content .cart-list .cart-item, .pricing-item .pricing-inner .pricing-header h3 {
-  margin-bottom: 10px;
+.ampliar-imagen {
+  width: 500px; /* Ajusta el valor del ancho según sea necesario */
+  height: auto; /* Mantiene la proporción de aspecto original */
 }
 
 /*!
@@ -407,7 +330,7 @@ p {
 }
 
 a {
-  color: #0a1920;
+  color: #0b82f4;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -418,12 +341,15 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #0065ff;
+  color: black;
   text-decoration: none;
   outline: none;
 }
 
-
+img {
+  height: 50;
+  max-width: 100%;
+}
 
 @media (min-width: 576px) {
   h1 {
@@ -491,7 +417,7 @@ ul li {
   margin-bottom: 40px !important;
 }
 .section-header h2 {
-  text-shadow: 2px 2px 0 #0878ff;
+  text-shadow: 2px 2px 0 #007bb5;
   margin-top: -10px;
   z-index: 9 !important;
 }
@@ -615,11 +541,10 @@ ul li {
 }
 .page-header .page-header-content-area {
   z-index: 1;
-  padding: 150;
 }
 .page-header .page-header-content-area .ph-title {
   text-align: center;
-  color: #0878ff;
+  color: #fff;
 }
 .page-header .page-header-content-area h4 {
   font-size: 30px;
@@ -641,7 +566,7 @@ ul li {
   padding-right: 0;
 }
 .page-header .page-header-content-area ul li a {
-  color: #098aff;
+  color: #fff;
 }
 .page-header .page-header-content-area ul li a::after {
   width: 5px;
@@ -1115,7 +1040,7 @@ ul li {
   content: "";
   width: 40px;
   height: 4px;
-  background-color: #0d81ff;
+  background-color: #007bb5;
   bottom: -20px;
   border-radius: 2px;
 }
@@ -1170,7 +1095,7 @@ ul li {
   border-bottom: none;
 }
 .widget.widget-category .widget-wrapper.list-bg-none li a span:last-child {
-  background-color: #0d81ff;
+  background-color: transparent;
 }
 .widget.widget-category .widget-wrapper li {
   padding: 0;
@@ -1184,10 +1109,10 @@ ul li {
 }
 .widget.widget-category .widget-wrapper li a.active, .widget.widget-category .widget-wrapper li a:hover {
   padding-left: 10px;
-  color: #0a1920;
+  color: #df01ae;
 }
 .widget.widget-category .widget-wrapper li a.active span:last-child, .widget.widget-category .widget-wrapper li a:hover span:last-child {
-  background-color: #bd081c;
+  background-color: #df01ae;
   color: #fff;
 }
 .widget.widget-category .widget-wrapper li a span {
@@ -1198,7 +1123,7 @@ ul li {
   height: 30px;
   line-height: 30px;
   border-radius: 100%;
-  color: wheat;
+  color: #fff;
   text-align: center;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1855,11 +1780,13 @@ ul li {
 }
 
 .overlay {
-  top: 25%;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/banner/bg.jpg");
+  background-image: url(../images/banner/Baner-nosostros.jpg);
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; 
 }
 
 .post-item .post-inner {
@@ -1983,7 +1910,7 @@ ul li {
   height: 40px;
   line-height: 40px;
   border-radius: 2px;
-  color: #0d81ff;
+  color: #fff;
   font-size: 24px;
   margin-bottom: 4px;
   text-align: center;
@@ -2369,8 +2296,8 @@ ul li {
   animation: fadeInDown 0.5s;
   -webkit-animation: fadeInDown 0.5s;
   -moz-animation: fadeInDown 0.5s;
-  box-shadow: 0px 4px 20px 0px rgba(8, 135, 252, 0.2);
-  border-bottom: 1px solid rgba(13, 142, 249, 0.1);
+  box-shadow: 0px 4px 20px 0px rgba(223, 1, 174, 0.2);
+  border-bottom: 1px solid rgba(223, 1, 174, 0.1);
   z-index: 999;
 }
 .header-section.header-fixed .header-bottom {
@@ -2476,7 +2403,7 @@ ul li {
   color: #fff;
 }
 .header-wrapper .menu-area .cart-ticket .cart-icon .cart-content .lab-btn {
-  color: #007bb5;
+  color: #df01ae;
   line-height: 40px;
   padding: 0 20px;
 }
@@ -2491,10 +2418,11 @@ ul li {
   }
 }
 .menu > li > a {
- font-size: 16px;
- font-weight: 500;
- padding: 15px 22px;
- text-transform: capitalize;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 22px;
+  text-transform: capitalize;
 }
 .menu > li > a i {
   margin-right: 5px;
@@ -2557,7 +2485,7 @@ ul li {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .menu li a {
-    padding: 10px 12px; 
+    padding: 10px 12px;
   }
 }
 @media (max-width: 991px) {
@@ -2760,7 +2688,7 @@ ul li {
   height: auto;
 }
 .banner-section .banner-wrapper .banner-content .countdown .clock-item .count-number {
-  background: #0878ff;
+  background: #007bb5;
   color: #fff;
   font-size: 30px;
   font-weight: 700;
@@ -3387,7 +3315,7 @@ ul li {
 .authors .author-thumb {
   width: 160px;
   text-align: center;
-  border: 4px solid #0d81ff;
+  border: 4px solid #df01ae;
   border-radius: 50%;
 }
 .authors .author-thumb a {
@@ -3431,9 +3359,7 @@ ul li {
   width: 30px;
   height: 30px;
   line-height: 30px;
-  background: aliceblue;
-  padding: 7px;
-  border-color: #0d81ff;
+  background: transparent;
 }
 .authors .author-content .social-media a.twitter {
   color: #55acee;
@@ -3442,13 +3368,13 @@ ul li {
   color: #1769ff;
 }
 .authors .author-content .social-media a.instagram {
-  color: #0d81ff;
+  color: #e4405f;
 }
 .authors .author-content .social-media a.vimeo {
   color: #3b5998;
 }
 .authors .author-content .social-media a.linkedin {
-  color: #0d81ff;
+  color: #007bb5;
 }
 
 .comments {
@@ -4290,11 +4216,11 @@ ul li {
 }
 .widget .widget-header h5 {
   text-transform: capitalize;
+  color: #fff;
   font-weight: 700;
   position: relative;
   font-family: "Arvo", serif;
   font-size: 18px;
-  color: #0d81ff;
 }
 .widget .widget-header h5::before {
   position: absolute;
@@ -4307,7 +4233,7 @@ ul li {
 .widget .widget-header h5::after {
   position: absolute;
   content: "";
-  border-bottom: 5px dotted #0d81ff;
+  border-bottom: 5px dotted #007bb5;
   width: 30px;
   bottom: -20px;
   left: 43px;
@@ -4351,11 +4277,11 @@ ul li {
   outline: none;
   border: none;
   cursor: pointer;
-  background: #0d81ff;
+  background: #df01ae;
 }
 .widget.widget-archive h5, .widget.widget-category h5 {
   margin-bottom: 40px;
-  color: #0d81ff;
+  color: black;
 }
 .widget.widget-archive .widget-wrapper li, .widget.widget-category .widget-wrapper li {
   padding: 0;
@@ -4984,7 +4910,7 @@ ul li {
   
 }
 .contact-info-wrapper .contact-info-content .contact-info-item .contact-info-inner .contact-info-details span {
-  color: #0878ff;
+  color: white;
 }
 
 /*Footer section start here*/

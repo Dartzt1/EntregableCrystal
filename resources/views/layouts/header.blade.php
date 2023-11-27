@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/lightcase.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost/EntregableCrystalPass\public\assets\css\style.css">
 </head>
 <body>
     <!-- Pantalla de carga -->
@@ -25,5 +25,3 @@
                 </div>
             </div>
         </div>
-	
-    

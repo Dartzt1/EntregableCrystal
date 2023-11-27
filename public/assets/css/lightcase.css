@@ -61,13 +61,12 @@
 
 .menu-aboton-tree {
   margin: 10px;
-  color: black;
+  color: red;
   font-size: 16px;
   font-weight: 700;
   padding: 15px 22px;
   text-transform: capitalize;
 }
-
 
 .menu-aboton {
   margin: 10px;
