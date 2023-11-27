@@ -8,6 +8,7 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\TicketController;
 use App\Http\Controllers\PermisoController;
+use App\Http\Controllers\verEventosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +20,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('eventos', function () {
-    return view('eventos');
-});
+Route::get('eventos', [verEventosController::class, 'vereventos'])->name('vereventos');
+
+
 
 Route::get('nosotros', function () {
     return view('nosotros');
@@ -30,6 +31,8 @@ Route::get('nosotros', function () {
 Route::get('contacto', function () {
     return view('contacto');
 });
+
+
 
 
 

@@ -1,206 +1,82 @@
 @extends("Layouts.layout")
+
 @section('title', 'Crystal Pass | Eventos')
 
 <style>
+    /* Estilos CSS */
     .columna-dos {
-    display: flex; 
+        display: flex;
     }
 
     .columna-espacio {
-    flex: 1;
-    margin: 0 10px; 
-    position: left;
+        flex: 1;
+        margin: 0 10px;
+        position: left;
+    }
+
+    .img--evento {
+        /* Estilos específicos para la imagen */
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 </style>
 
 <x-c-navegacion></x-c-navegacion>
 <x-c-baner></x-c-baner>
 
-<div class="container">
-    <div class="row justify-content-center pb-15">
-        
-        <div class="container">
-            <div class="columna-dos">
-
-                <div class="columna-espacio">
-                    <a href="/karol-g-en-lima-2024">
-                        <div >
-                            <div class="aspect__inner">
-                                <img src="https://cdn.teleticket.com.pe/images/eventos/ven039_calugalistado.jpg" onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'" alt="" class="img--evento">
-                            </div>
+@section('content')
+    <div class="container">
+        @foreach($tickets as $ticket)
+            <div class="row justify-content-center pb-15">
+                <div class="container">
+                    <div class="columna-dos">
+                        <div class="columna-espacio">
+                            <a href="/karol-g-en-lima-2024">
+                                <div class="text-right col-md-6">
+                                    <a href="{{ asset('storage/images/' . $ticket->img_path) }}" target="_blank" class="image-popup-link">
+                                        <img src="{{ asset('storage/images/' . $ticket->img_path) }}" alt="Imagen del Evento" class="img--evento">
+                                    </a>
+                                </div>
+                                <div class="evento--box">
+                                    <div class="d-none d-md-block">
+                                        <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" alt="ticket" class="ico-ticket">
+                                    </div>
+                                    <div>
+                                        <p class="descripcion text-truncate">
+                                            <strong>ID:</strong> {{ $ticket->id }}
+                                        </p>
+                                        <p class="descripcion text-truncate">
+                                            <strong>Nombre del Evento:</strong> {{ $ticket->nomeven }}
+                                        </p>
+                                        <p class="descripcion text-truncate">
+                                            <strong>Fecha:</strong> {{ $ticket->fecha }}
+                                        </p>
+                                        <p class="descripcion text-truncate">
+                                            <strong>Numero de Entradas Disponibles:</strong> {{ $ticket->nument }}
+                                        </p>
+                                        <p class="descripcion text-truncate">
+                                            <strong>Tipo de evento:</strong> {{ $ticket->tipoeven }}
+                                        </p>
+                                        <p class="descripcion text-truncate">
+                                            <strong>Proveedor:</strong> {{ $ticket->proved }}
+                                        </p>
+                                        <p class="descripcion text-truncate">
+                                            <strong>Direccion:</strong> {{ $ticket->direccion }}
+                                        </p>
+                                        <p class="fecha text-truncate">
+                                            {{ $ticket->fecha }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="evento--box">
-                            <div class="d-none d-md-block">
-                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" alt="ticket" class="ico-ticket">
-                            </div>
-                            <div>
-                                <p class="descripcion text-truncate">
-                                    <strong>Estadio Nacional - LIMA</strong> / Música
-                                </p>
-                                <h3 title="KAROL G - MAÑANA SERÁ BONITO LATAM TOUR ">
-                                    KAROL G - MAÑANA SERÁ BONITO LATAM TOUR 
-                                </h3>
-                                <p class="fecha text-truncate">
-                                    13 de abril 2024
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="columna-espacio">
-                    <a href="/karol-g-en-lima-2024">
-                        <div >
-                            <div class="aspect__inner">
-                                <img src="https://cdn.teleticket.com.pe/images/eventos/ven039_calugalistado.jpg" onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'" alt="" class="img--evento">
-                            </div>
-                        </div>
-                        <div class="evento--box">
-                            <div class="d-none d-md-block">
-                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" alt="ticket" class="ico-ticket">
-                            </div>
-                            <div>
-                                <p class="descripcion text-truncate">
-                                    <strong>Estadio Nacional - LIMA</strong> / Música
-                                </p>
-                                <h3 title="KAROL G - MAÑANA SERÁ BONITO LATAM TOUR ">
-                                    KAROL G - MAÑANA SERÁ BONITO LATAM TOUR 
-                                </h3>
-                                <p class="fecha text-truncate">
-                                    13 de abril 2024
-                                </p>
-                            </div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        @endforeach
     </div>
-</div>
 
-<div class="container">
-    <div class="row justify-content-center pb-15">
-        
-        <div class="container">
-            <div class="columna-dos">
-
-                <div class="columna-espacio">
-                    <a href="/karol-g-en-lima-2024">
-                        <div >
-                            <div class="aspect__inner">
-                                <img src="https://cdn.teleticket.com.pe/images/eventos/ven039_calugalistado.jpg" onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'" alt="" class="img--evento">
-                            </div>
-                        </div>
-                        <div class="evento--box">
-                            <div class="d-none d-md-block">
-                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" alt="ticket" class="ico-ticket">
-                            </div>
-                            <div>
-                                <p class="descripcion text-truncate">
-                                    <strong>Estadio Nacional - LIMA</strong> / Música
-                                </p>
-                                <h3 title="KAROL G - MAÑANA SERÁ BONITO LATAM TOUR ">
-                                    KAROL G - MAÑANA SERÁ BONITO LATAM TOUR 
-                                </h3>
-                                <p class="fecha text-truncate">
-                                    13 de abril 2024
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="columna-espacio">
-                    <a href="/karol-g-en-lima-2024">
-                        <div >
-                            <div class="aspect__inner">
-                                <img src="https://cdn.teleticket.com.pe/images/eventos/ven039_calugalistado.jpg" onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'" alt="" class="img--evento">
-                            </div>
-                        </div>
-                        <div class="evento--box">
-                            <div class="d-none d-md-block">
-                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" alt="ticket" class="ico-ticket">
-                            </div>
-                            <div>
-                                <p class="descripcion text-truncate">
-                                    <strong>Estadio Nacional - LIMA</strong> / Música
-                                </p>
-                                <h3 title="KAROL G - MAÑANA SERÁ BONITO LATAM TOUR ">
-                                    KAROL G - MAÑANA SERÁ BONITO LATAM TOUR 
-                                </h3>
-                                <p class="fecha text-truncate">
-                                    13 de abril 2024
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row justify-content-center pb-15">
-        
-        <div class="container">
-            <div class="columna-dos">
-
-                <div class="columna-espacio">
-                    <a href="/karol-g-en-lima-2024">
-                        <div >
-                            <div class="aspect__inner">
-                                <img src="https://cdn.teleticket.com.pe/images/eventos/ven039_calugalistado.jpg" onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'" alt="" class="img--evento">
-                            </div>
-                        </div>
-                        <div class="evento--box">
-                            <div class="d-none d-md-block">
-                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" alt="ticket" class="ico-ticket">
-                            </div>
-                            <div>
-                                <p class="descripcion text-truncate">
-                                    <strong>Estadio Nacional - LIMA</strong> / Música
-                                </p>
-                                <h3 title="KAROL G - MAÑANA SERÁ BONITO LATAM TOUR ">
-                                    KAROL G - MAÑANA SERÁ BONITO LATAM TOUR 
-                                </h3>
-                                <p class="fecha text-truncate">
-                                    13 de abril 2024
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="columna-espacio">
-                    <a href="/karol-g-en-lima-2024">
-                        <div >
-                            <div class="aspect__inner">
-                                <img src="https://cdn.teleticket.com.pe/images/eventos/ven039_calugalistado.jpg" onerror="this.src='https://cdnp.teleticket.com.pe/Content/images/estilo-2021/evento/480x220.jpg'" alt="" class="img--evento">
-                            </div>
-                        </div>
-                        <div class="evento--box">
-                            <div class="d-none d-md-block">
-                                <img src="https://cdnp.teleticket.com.pe/Content/images/estilo-2021/icon/ico-ticket.png" alt="ticket" class="ico-ticket">
-                            </div>
-                            <div>
-                                <p class="descripcion text-truncate">
-                                    <strong>Estadio Nacional - LIMA</strong> / Música
-                                </p>
-                                <h3 title="KAROL G - MAÑANA SERÁ BONITO LATAM TOUR ">
-                                    KAROL G - MAÑANA SERÁ BONITO LATAM TOUR 
-                                </h3>
-                                <p class="fecha text-truncate">
-                                    13 de abril 2024
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<x-c-ubicacion></x-c-ubicacion>
-<x-c-creditos></x-c-creditos>
+    <x-c-ubicacion></x-c-ubicacion>
+    <x-c-creditos></x-c-creditos>
+@stop
