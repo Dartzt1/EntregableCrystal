@@ -65,8 +65,8 @@ class PermisoController extends Controller
      */
     public function destroy(string $id)
     {
-        // $permisos = Permission::find($id);
-        // $permisos->delete();
-        // return back();
+         $permisos = Permission::find($id);
+         $permisos->delete();
+         return back();
     }
 }

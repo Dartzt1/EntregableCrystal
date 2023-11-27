@@ -23,7 +23,7 @@
                 </div>
                 @endforeach
                 {!! Form::submit('Asignar Permisos', ['class'=>'btn btn-success mt-3']) !!}
-                <a href="{{ route('asignar.index') }}" class="float-right mt-3 btn btn-primary" >Regresar a la lista de Roles</a>
+                <a href="{{ route('roles.index') }}" class="float-right mt-3 btn btn-primary" >Regresar a la lista de Roles</a>
             {!! Form::close() !!}
         </div>
     </div>

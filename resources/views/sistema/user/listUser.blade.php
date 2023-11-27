@@ -9,9 +9,7 @@
 @section('content')
 <p>Aquì se muestra la lista de clientes</p>
 <div class="card">
-    <div class="card-header">
-        <x-adminlte-button label="Nuevo" theme="primary" icon="fas fa-key" class="float-right" data-toggle="modal" data-target="#modalPurple"/>
-    </div>
+   
     <div class="card-body">
         @php
         $heads = ['ID', 'ROL', 'EMAIL', ['label' => 'Actions','no-export' => true, 'width' => 20]];
