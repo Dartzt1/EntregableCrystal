@@ -53,7 +53,7 @@
                             <div class="fm-item-content">
                                 <p class="mb-30">Encuentranos en Jr. Lima 433 - Huancayo</p>
                                 <link rel="web" href="https://maps.app.goo.gl/CByyVmr4gEw1JaGF8">
-                                <img class="rounded footer-abt-img" src="../assets\images\footer\footer-middle\map.png"
+                                <img class="rounded footer-abt-img" src="../assets\images\footer\footer-middle\map.png" width="100%"
                                     alt="about-image">
                             </div>
                         </div>

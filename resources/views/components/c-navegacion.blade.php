@@ -20,7 +20,10 @@
                             <div>
                                 @auth
                                     <div>
-                                        <a href="{{ url('/dashboard') }}" class="menu-aboton">Dashboard</a>
+                                        <a href="{{ url('/dashboard') }}">
+                                            <img src="assets\images\user.png" width="45" />
+                                        </a>
+                                        
                                     </div>
                                 @else
                                     <div>
