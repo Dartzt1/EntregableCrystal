@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-<h1>Administrador de Roles</h1>
+<h1>Administrador de Usuarios y Permisos</h1>
 @stop
 
 @section('content')
@@ -14,7 +14,7 @@
     </div>
     <div class="card-body">
         @php
-        $heads = ['ID', 'NOMBRE', ['label' => 'Actions','no-export' => true, 'width' => 20]];
+        $heads = ['ID', 'ROL', 'EMAIL', ['label' => 'Actions','no-export' => true, 'width' => 20]];
 
         $btnEdit = '';
         $btnDelete = '<button type="submit" class="mx-1 shadow btn btn-xs btn-default text-danger" title="Delete">
@@ -34,18 +34,19 @@
 
         {{-- Minimal example / fill data using the component slot --}}
         <x-adminlte-datatable id="table1" :heads="$heads" :config="$config">
-            @foreach($roles as $role)
+            @foreach($users as $user)
             <tr>
-                <td>{{ $role->id }}</td>
-                <td>{{ $role->name }}</td>
+                <td>{{ $user->id }}</td>
+                <td>{{ $user->name }}</td>
+                <td>{{ $user->email }}</td>
                 
                 <td>
-                    <a href="{{route('roles.edit',$role)}}" class="mx-1 shadow btn btn-xs btn-default text-primary" title="Edit">
+                    <a href="{{route('asignar.edit',$user)}}" class="mx-1 shadow btn btn-xs btn-default text-primary" title="Edit">
                         <i class="fa fa-lg fa-fw fa-pen"></i>
                     </a>
 
 
-                    <form style='display: inline' action="{{ route('roles.destroy', $role)}}" method="post"
+                    <form style='display: inline' action="{{ route('asignar.destroy', $user)}}" method="post"
                         class="formEliminar">
                         @csrf
                         @method('delete')
@@ -60,9 +61,9 @@
 </div>
 
 
-<x-adminlte-modal id="modalPurple" title="Nuevo Rol" theme="primary"
+{{-- <x-adminlte-modal id="modalPurple" title="Nuevo Rol" theme="primary"
     icon="fas fa-bolt" size='lg' disable-animations>
-    <form actions="{{route('roles.store')}}" method="post">
+    <form action="{{route('roles.store')}}" method="post">
         @csrf
         <div class="row">
             <x-adminlte-input name="nombre" label="Nombre" placeholder="Ingrese su rol..."
@@ -70,7 +71,7 @@
         </div>
         <x-adminlte-button type="submit" label="Guardar" theme="success" icon="fas fa-thumbs-up"/>
     </form>
-</x-adminlte-modal>
+</x-adminlte-modal> --}}
 
 
 

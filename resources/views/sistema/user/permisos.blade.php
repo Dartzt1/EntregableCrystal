@@ -40,9 +40,7 @@
                 <td>{{ $permiso->name }}</td>
                 
                 <td>
-                    <a href="{{route('permisos.edit',$permiso)}}" class="mx-1 shadow btn btn-xs btn-default text-primary" title="Edit">
-                        <i class="fa fa-lg fa-fw fa-pen"></i>
-                    </a>
+                    
 
 
                     <form style='display: inline' action="{{ route('permisos.destroy', $permiso)}}" method="post"
@@ -51,7 +49,7 @@
                         @method('delete')
                         {!! $btnDelete !!}
                     </form>
-                    {!! $btnDetails !!}
+                    
                 </td>
             </tr>
             @endforeach
@@ -62,7 +60,7 @@
 
 <x-adminlte-modal id="modalPurple" title="Nuevo Permiso" theme="primary"
     icon="fas fa-bolt" size='lg' disable-animations>
-    <form actions="{{route('permisos.store')}}" method="post">
+    <form action="{{route('permisos.store')}}" method="post">
         @csrf
         <div class="row">
             <x-adminlte-input name="nombre" label="Nombre" placeholder="Ingrese su permiso..."

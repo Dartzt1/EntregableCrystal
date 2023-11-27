@@ -9,6 +9,11 @@
 @section('content')
 <p>Aquì se muestra la lista de clientes</p>
 <div class="card">
+    @can('Administrar')
+        <div class="card-head">
+            <a href="{{route('cliente.create')}}" class="float-right mt-2 mr-2 btn btn-primary" >Nuevo</a>
+        </div>
+    @endcan
     <div class="card-body">
         @php
         $heads = ['ID', 'DNI', 'Apellidos', 'Nombres', 'Email','Direccion', ['label' => 'Telefono', 'width' => 30],  ['label' => 'Actions',
@@ -47,13 +52,15 @@
                         <i class="fa fa-lg fa-fw fa-pen"></i>
                     </a>
 
-
+                    @can('Administrar')
                     <form style='display: inline' action="{{ route('cliente.destroy', $cliente)}}" method="post"
                         class="formEliminar">
                         @csrf
                         @method('delete')
                         {!! $btnDelete !!}
                     </form>
+                    @endcan
+                    
                     <a href="{{route('cliente.show',$cliente)}}" class="mx-1 shadow btn btn-xs btn-default text-primary" title="Show">
                         <i class="fa fa-lg fa-fw fa-eye"></i>
                     </a>

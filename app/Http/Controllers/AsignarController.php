@@ -2,19 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Spatie\Permission\Models\Role;
-use Spatie\Permission\Models\Permission;
 
-class RoleController extends Controller
+
+class AsignarController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $roles = Role::all();
-        return view('sistema.user.roles', compact('roles'));
+        //
+        $users = User::all();
+        return view ('sistema.user.listUser', compact('users'));
     }
 
     /**
@@ -30,8 +32,7 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-        $role = Role::create(['name' => $request->input('nombre')]);
-        return back();
+        //
     }
 
     /**
@@ -45,30 +46,34 @@ class RoleController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Role $role)
+    public function edit(string $id)
     {
-        // $role = Role::find($id);
-        $permisos = Permission::all();
-        return view('sistema.user.rolePermiso', compact('role','permisos'));
+        //
+        $user = User::find($id);
+        $roles = Role::all();
+
+        return view ('sistema.user.userRol', compact('user', 'roles'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Role $role)
+    public function update(Request $request, string $id)
     {
         //
-        $role->permissions()->sync($request->permisos);
-        return redirect() -> route('roles.edit', $role);
+        $user = User::find($id);
+        $user-> roles()->sync($request->roles);
+
+        return redirect()->route('asignar.edit', $user);
     }
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(string $id)
-    {
-        // $role = Role::find($id);
-        // $role->delete();
-        // return back();
-    }
+     {
+         $user = user::find($id);
+         $user->delete();
+         return back();
+     }
 }

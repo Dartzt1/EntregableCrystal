@@ -311,48 +311,68 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        ['header' => 'USUARIOS'],
-        [
-            'text'        => 'Roles',
-            'route'         => 'roles.index',
-            'icon'        => 'far fa-fw fa-file',
-        ],
-        
-        [
-            'text'        => 'Permisos',
-            'route'         => 'permisos.index',
-            'icon'        => 'far fa-fw fa-file',
-        ],
+        ['header' => 'USUARIOS',
+        'can' => 'Administrar',
+    ],
+    [
+        'text'        => 'Roles',
+        'route'       => 'roles.index',
+        'icon'        => 'far fa-fw fa-file',
+        'can' => 'Administrar',
+
+    ],
+    [
+        'text'        => 'Permisos',
+        'route'         => 'permisos.index',
+        'icon'        => 'far fa-fw fa-file',
+        'can' => 'Administrar',
+
+    ],
+    [
+        'text'        => 'Usuarios',
+        'route'         => 'asignar.index',
+        'icon'        => 'far fa-fw fa-file',
+        'can' => 'Administrar',
+
+    ],
+
 
         ['header' => 'CONFIGURACION DE CUENTA'],
         [
             'text' => 'Perfil',
             'url'  => 'profile',
             'icon' => 'fas fa-fw fa-user',
+
         ],
 
-        ['header' => 'CLIENTE'],
+        ['header' => 'CLIENTE',
+        'can' => 'Administrar',],
         [
             'text' => 'Lista de clientes',
             'route'  => 'cliente.index',
             'icon' => 'fas fa-fw fa-user',
+            'can' => 'Administrar',
         ],
         [
             'text' => 'Nuevo Cliente',
             'route'  => 'cliente.create',
             'icon' => 'fas fa-fw fa-lock',
+            'can' => 'Administrar',
         ],
 
-        ['header' => 'EVENTOS'],
+        ['header' => 'EVENTOS',
+        'can' => 'Administrar',],
         [
             'text' => 'Lista de eventos',
             'route'  => 'ticket.index',
             'icon' => 'fas fa-fw fa-user',
+            'can' => 'Administrar',
         ],
         [
             'text' => 'Nuevo evento',
             'route'  => 'ticket.create',
             'icon' => 'fas fa-fw fa-lock',
+            'can' => 'Administrar',
         ],
 
         // [

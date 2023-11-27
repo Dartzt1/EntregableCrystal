@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AsignarController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\AuthController;
@@ -41,7 +42,7 @@ Route::middleware([
     Route::resource('/ticket', TicketController::class)->names('ticket');
     Route::resource('/roles', RoleController::class)->names('roles');
     Route::resource('/permisos', PermisoController::class)->names('permisos');
-    
+    Route::resource('/usuarios', AsignarController::class)->names('asignar');
 });
 
 Route::get('/auth/redirect', [AuthController::class, 'redirect']);
