@@ -23,7 +23,7 @@
                                         <a href="{{ url('/dashboard') }}">
                                             <img src="assets\images\user.png" width="45" />
                                         </a>
-                                        
+
                                     </div>
                                 @else
                                     <div>

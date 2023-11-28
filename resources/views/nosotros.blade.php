@@ -121,32 +121,32 @@
                             </div>
                             <ul class="lab-ul widget-wrapper list-bg-none">
                                 <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Música en Vivo</span><span>18</span></a>
+                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
+                                                class="icofont-rounded-double-right"></i>Música en Vivo</span></p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Festivales de Música</span><span>20</span></a>
+                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
+                                                class="icofont-rounded-double-right"></i>Festivales de Música</span></p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Teatro y Artes Escénicas</span><span>25</span></a>
+                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
+                                                class="icofont-rounded-double-right"></i>Teatro y Artes Escénicas</span></p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Eventos Deportivos</span><span>30</span></a>
+                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
+                                                class="icofont-rounded-double-right"></i>Eventos Deportivos</p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Ferias y Exposiciones</span><span>28</span></a>
+                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
+                                                class="icofont-rounded-double-right"></i>Ferias y Exposiciones</p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Eventos Culturales</span><span>20</span></a>
+                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
+                                                class="icofont-rounded-double-right"></i>Eventos Culturales</p>
                                 </li>
                                 <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Eventos Gastronómicos</span><span>26</span></a>
+                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
+                                                class="icofont-rounded-double-right"></i>Eventos Gastronómicos</span></p>
                                 </li>
                             </ul>
                         </div>
@@ -158,49 +158,49 @@
                             <ul class="lab-ul widget-wrapper">
                                 <li class="d-flex flex-wrap justify-content-between">
                                     <div class="post-thumb rounded">
-                                        <a href="blog-single.html"><img src="assets/images/product/karol.jpg"
-                                                alt="product"></a>
+                                        <p href="blog-single.html"><img src="assets/images/product/karol.jpg"
+                                                alt="product"></p>
                                     </div>
                                     <div class="post-content ps-3">
-                                        <a href="blog-single.html">
+                                        <p>
                                             <h6>KAROL G - MAÑANA SERA BONITO</h6>
-                                        </a>
+                                        </p>
                                         <p>04 February 2024</p>
                                     </div>
                                 </li>
                                 <li class="d-flex flex-wrap justify-content-between">
                                     <div class="post-thumb rounded">
-                                        <a href="blog-single.html"><img src="assets/images/product/romeo.jpg"
-                                                alt="product"></a>
+                                        <p href="blog-single.html"><img src="assets/images/product/romeo.jpg"
+                                                alt="product"></p>
                                     </div>
                                     <div class="post-content ps-3">
-                                        <a href="blog-single.html">
+                                        <p>
                                             <h6>ROMEO SANTOS FORMULAR - LA GIRA </h6>
-                                        </a>
+                                        </p>
                                         <p>04 February 2024</p>
                                     </div>
                                 </li>
                                 <li class="d-flex flex-wrap justify-content-between">
                                     <div class="post-thumb rounded">
-                                        <a href="blog-single.html"><img src="assets/images/product/enjambre.jpg"
-                                                alt="product"></a>
+                                        <p><img src="assets/images/product/enjambre.jpg"
+                                                alt="product"></p>
                                     </div>
                                     <div class="post-content ps-3">
-                                        <a href="blog-single.html">
+                                        <p>
                                             <h6>ENJAMBRE - LIMA</h6>
-                                        </a>
+                                        </p>
                                         <p>04 February 2024</p>
                                     </div>
                                 </li>
                                 <li class="d-flex flex-wrap justify-content-between">
                                     <div class="post-thumb rounded">
-                                        <a href="blog-single.html"><img src="assets/images/product/cumbia.jpg"
-                                                alt="product"></a>
+                                        <p href="blog-single.html"><img src="assets/images/product/cumbia.jpg"
+                                                alt="product"></p>
                                     </div>
                                     <div class="post-content ps-3">
                                         <a href="blog-single.html">
                                             <h6>FESTIVALPURA CUMBA - LIMA</h6>
-                                        </a>
+                                        </p>
                                         <p>04 February 2024</p>
                                     </div>
                                 </li>

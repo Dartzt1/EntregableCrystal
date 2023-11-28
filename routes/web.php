@@ -23,7 +23,6 @@ Route::get('/', function () {
 Route::get('eventos', [verEventosController::class, 'vereventos'])->name('vereventos');
 
 
-
 Route::get('nosotros', function () {
     return view('nosotros');
 });
@@ -59,3 +58,9 @@ Route::get('/auth/callback', [AuthController::class, 'callback']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+Route::get('festivalcumbia', function () {
+    return view('eventosgenerales.festivalcumbia');
+});
