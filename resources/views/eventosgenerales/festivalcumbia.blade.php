@@ -109,9 +109,9 @@
                                     <div class="select-product size">
                                         <select>
                                             <option>Selecione lugar</option>
-                                            <option>Vip</option>
-                                            <option>Oro</option>
-                                            <option>Platino</option>
+                                            <option>Vip 150</option>
+                                            <option>Oro 100</option>
+                                            <option>Platino 60</option>
                                         </select>
                                         <i class="fas fa-angle-down"></i>
                                     </div>
