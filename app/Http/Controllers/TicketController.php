@@ -33,12 +33,18 @@ class TicketController extends Controller
     {
         //
         $validacion = $request ->validate([
-            'nomeven' => 'required|string|max:75',
+            'nomeven' => 'required|max:500',
             'fecha' => 'required|date',
-            'nument' => 'required|string',
-            'proved' => 'required|string|max:75',
-            'tipoeven' => 'required|string|max:5000',
+            'nument' => 'required|max:500',
+            'proved' => 'required|max:500',
+            'tipoeven' => 'required|max:500',
+            'direccion' => 'required|max:5000',
+            'detalles' => 'required|max:5000',
             'img' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'preciovip' => 'required|numeric|between:0,99999999.99',
+            'preciooro' => 'required|numeric|between:0,99999999.99',
+            'precioplatino' => 'required|numeric|between:0,99999999.99',
+
             
         ]); 
 
@@ -49,8 +55,12 @@ class TicketController extends Controller
         $ticket->proved = $request->input('proved');
         $ticket->tipoeven = $request->input('tipoeven');
         $ticket->direccion = $request->input('direccion');
+        $ticket->detalles = $request->input('detalles');
         $imagePath = $request->file('img')->store('public/images');
         $ticket->img_path = basename($imagePath);
+        $ticket->preciovip = $request->input('preciovip');
+        $ticket->preciooro = $request->input('preciooro');
+        $ticket->precioplatino = $request->input('precioplatino');
 
 
         $ticket->save();
@@ -99,9 +109,15 @@ public function show(string $id)
         $ticket->proved = $request->input('proved');
         $ticket->tipoeven = $request->input('tipoeven');
         $ticket->direccion = $request->input('direccion');
+        $ticket->detalles = $request->input('detalles');
+        $ticket->preciovip = $request->input('preciovip');
+        $ticket->preciooro = $request->input('preciooro');
+        $ticket->precioplatino = $request->input('precioplatino');
+
         if ($request->hasFile('img')) {
             $imagePath = $request->file('img')->store('public/images');
             $ticket->img_path = basename($imagePath);
+        
         }
 
         $ticket->save();

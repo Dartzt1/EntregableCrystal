@@ -19,11 +19,14 @@ return new class extends Migration
             $table->string('proved',75);
             $table->string('tipoeven',75);
             $table->string('direccion',5000)->nullable();
+            $table->string('detalles',5000)->nullable();
             $table->text('img_path')->nullable();
+            $table->decimal('preciovip', 6, 2);
+            $table->decimal('preciooro', 6, 2);
+            $table->decimal('precioplatino', 6, 2);
             $table->timestamps();
         });
     }
-
 
     public function down(): void
     {

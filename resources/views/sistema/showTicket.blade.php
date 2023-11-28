@@ -20,6 +20,15 @@
                         <li><strong>Tipo de evento:</strong> {{ $ticket->tipoeven }}</li>
                         <li><strong>Proveedor:</strong> {{ $ticket->proved }}</li>
                         <li><strong>Direccion:</strong> {{ $ticket->direccion }}</li>
+                        <li><strong>Detalles:</strong> {{ $ticket->detalles }}</li>
+                        <li><strong>Precio - Vip:</strong> {{ $ticket->preciovip }}</li>
+                        <li><strong>Precio - Oro:</strong> {{ $ticket->preciooro }}</li>
+                        <li><strong>Precio - Platino:</strong> {{ $ticket->precioplatino }}</li>
+
+
+
+
+                        
                     </ul>
                 </div>
                 <div class="text-right col-md-6">

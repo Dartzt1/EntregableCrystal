@@ -66,6 +66,31 @@
             </x-adminlte-input>
 
 
+            <x-adminlte-input type="text" name="preciovip" label="Precio entrada VIP" placeholder="Inserte precio de la entrada vip" label-class="text-lightblue" value="{{$ticket->preciovip}}">
+                    <x-slot name="prependSlot">
+                        <div class="input-group-text">
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                        </div>
+                    </x-slot>
+                </x-adminlte-input>
+
+                <x-adminlte-input type="text" name="preciooro" label="Precio entrada ORO" placeholder="Inserte precio de la entrada Oro" label-class="text-lightblue" value="{{$ticket->preciooro}}">
+                    <x-slot name="prependSlot">
+                        <div class="input-group-text">
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                        </div>
+                    </x-slot>
+                </x-adminlte-input>
+
+                <x-adminlte-input type="text" name="precioplatino" label="Precio entrada Platino" placeholder="Inserte precio de la entrada Platino" label-class="text-lightblue" value="{{$ticket->precioplatino}}">
+                    <x-slot name="prependSlot">
+                        <div class="input-group-text">
+                        <i class="fas fa-money-bill-wave-alt"></i>
+                        </div>
+                    </x-slot>
+                </x-adminlte-input>
+
+
 
             <x-adminlte-input-file name="img" igroup-size="sm" label="IMAGEN DE EVENTO" placeholder="Buscar Imagen" label-class="text-lightblue" @change="previewImage" accept="image/*">
                 <x-slot name="prependSlot">
@@ -76,14 +101,26 @@
             </x-adminlte-input-file>
 
 
-            <x-adminlte-textarea name="direccion" label="DIRECCION" rows=5 label-class="text-lightblue" igroup-size="sm" value="{{$ticket->direccion}}" >
+            <x-adminlte-textarea name="direccion" label="DIRECCION" rows=2 label-class="text-lightblue" igroup-size="sm">
             <x-slot name="prependSlot">
                 <div class="input-group-text bg-dark">
-                    <i class="fas fa-lg fa-file-alt text-lightblue"></i>
+                <i class="fas fa-map-marker-alt"></i>
                 </div>
                 </x-slot>
-                {{ old('direccion') }} 
+                {{ $ticket->direccion }}
             </x-adminlte-textarea>
+
+            <x-adminlte-textarea name="detalles" label="DETALLES" rows=2 label-class="text-lightblue" igroup-size="sm">
+            <x-slot name="prependSlot">
+                <div class="input-group-text bg-dark">
+                <i class="fas fa-info-circle"></i>  
+                </div>
+                </x-slot>
+                {{ $ticket->detalles }}
+            </x-adminlte-textarea>
+
+
+
 
 
 

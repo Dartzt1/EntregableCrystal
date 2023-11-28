@@ -12,8 +12,8 @@
         <div class="card-body">
             @php
                 $heads = [
-                    'ID', 'Nombre Evento', 'Fecha', 'Numero de entradas', 'Tipo de evento', 'Proveedor', 'img', 
-                    ['label' => 'Direccion', 'width' => 40], ['label' => 'Actions', 'no-export' => true, 'width' => 10],
+                    'ID', 'Nombre Evento', 'Fecha', 'Numero de entradas', 'Tipo de evento', 'Proveedor','Precio Vip', 'Precio Oro', 'Precio Platino', 'img', 
+                    ['label' => 'Direccion', 'width' => 20],['label' => 'Detalles', 'width' => 40], ['label' => 'Actions', 'no-export' => true, 'width' => 20],
                 ];
 
                 $btnEdit = '<a href="%s" class="mx-1 shadow btn btn-xs btn-default text-primary" title="Edit">
@@ -37,8 +37,6 @@
                 ];
                 
             @endphp
-
-            {{-- Minimal example / fill data using the component slot --}}
             <x-adminlte-datatable id="table1" :heads="$heads" :config="$config">
                 @foreach($tickets as $ticket)
                     <tr>
@@ -48,6 +46,9 @@
                         <td>{{ $ticket->nument }}</td>
                         <td>{{ $ticket->tipoeven }}</td>
                         <td>{{ $ticket->proved }}</td>
+                        <td>{{ $ticket->preciovip }}</td>
+                        <td>{{ $ticket->preciooro }}</td>
+                        <td>{{ $ticket->precioplatino }}</td>
                         <td>
                             <a href="{{ asset('storage/images/' . $ticket->img_path) }}" target="_blank" class="image-popup-link">
                                 <img src="{{ asset('storage/images/' . $ticket->img_path) }}" alt="Imagen del Evento" style="max-width: 50px;">
@@ -55,6 +56,7 @@
                         </td>
                         
                         <td>{{ $ticket->direccion }}</td>
+                        <td>{{ $ticket->detalles }}</td>
                         <td>
                             {!! sprintf($btnEdit, route('ticket.edit', $ticket)) !!}
                             {!! sprintf($btnDelete, route('ticket.destroy', $ticket)) !!}
