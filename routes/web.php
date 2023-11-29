@@ -21,6 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('eventos', [verEventosController::class, 'vereventos'])->name('vereventos');
+Route::get('/eventos/comprar/{id}', [TicketController::class, 'comprar'])->name('comprar');
 
 
 Route::get('nosotros', function () {

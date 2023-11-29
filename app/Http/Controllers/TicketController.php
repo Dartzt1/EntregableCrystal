@@ -134,4 +134,12 @@ public function show(string $id)
         $ticket->delete();
         return back();
     }
+
+    public function comprar($id)
+{
+    $ticket = Ticket::findOrFail($id);
+
+    // Aquí puedes pasar los datos a la vista 'comprar'
+    return view('comprar', ['ticket' => $ticket]);
+}
 }
