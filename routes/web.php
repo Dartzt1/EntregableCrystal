@@ -11,6 +11,8 @@ use App\Http\Controllers\PermisoController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\verEventosController;
 use App\Http\Controllers\EmailController;
+use App\Http\Controllers\PagoController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,9 +34,14 @@ Route::get('/contacto', function () {
 
 Route::get('/eventos', [verEventosController::class, 'vereventos'])->name('vereventos');
 
+
+
 Route::get('/eventos/comprar/{id}', [TicketController::class, 'compras'])->name('compras');
 
-Route::get('/eventos/pagar/{id}', [TicketController::class, 'pagar'])->name('pagar');
+Route::get('/eventos/pagar/{id}', [PagoController::class, 'pago'])->name('pago');
+
+
+
 
 Route::post('/enviarcorreo', [EmailController::class, 'enviarcorreo'])->name('enviarcorreo');
 

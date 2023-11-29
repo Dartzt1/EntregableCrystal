@@ -24,6 +24,7 @@ return new class extends Migration
             $table->decimal('preciovip', 6, 2);
             $table->decimal('preciooro', 6, 2);
             $table->decimal('precioplatino', 6, 2);
+            
             $table->timestamps();
         });
     }

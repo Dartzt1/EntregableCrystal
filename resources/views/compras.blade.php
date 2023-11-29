@@ -143,7 +143,10 @@
                                 </h6>
                             
                                 <div>
+
                                     <style>
+
+
                                         /* Estilos para el contenedor del selector y el campo de entrada */
                                         .selector-container {
                                             display: flex;
@@ -176,34 +179,11 @@
                                             pointer-events: none;
                                         }
                                     
-                                        .cart-plus-minus {
-                                            width: 48%; /* Puedes ajustar el ancho según tus necesidades */
-                                            
-                                            justify-content: space-between;
-                                            align-items: center; /* Alinea los elementos verticalmente en el centro */
-                                        }
-                                    
-                                        .cart-plus-minus .dec,
-                                        .cart-plus-minus .inc {
-                                            width: 48px; /* Puedes ajustar el ancho según tus necesidades */
-                                            
-                                            border: 1px solid #ccc;
-                                            border-radius: 5px;
-                                            text-align: center;
-                                            cursor: pointer;
-                                        }
-                                    
-                                        .cart-plus-minus .cart-plus-minus-box {
-                                            width: calc(100% - 96px); /* Ajusta para dejar espacio suficiente para los botones */
-                                            padding: 10px;
-                                            border: 1px solid #ccc;
-                                            border-radius: 5px;
-                                            text-align: center;
-                                        }
                                     </style>
                                     
                                     <div class="selector-container">
                                         <div class="selector">
+                                            <label for="tipo-entrada">Selecciona el tipo de entrada:</label>
                                             <select id="tipo-entrada" name="tipo_entrada" onchange="updatePrice()">
                                                 <option value="vip">Vip</option>
                                                 <option value="oro">Oro</option>
@@ -211,56 +191,20 @@
                                             </select>
                                             <i style="color: black;" class="fas fa-arrow-down"></i>
                                         </div>
-
-                                        <div class="cart-plus-minus">
-                                            <div class="dec qtybutton" onclick="updateQuantity('decrement')">-</div>
-                                            <input class="cart-plus-minus-box" type="text" name="quantity" value="1" id="quantity" readonly>
-                                            <div class="inc qtybutton" onclick="updateQuantity('increment')">+</div>
-                                        </div>
                                     </div>
 
                                     <script>
-                                    function updatePrice() {
-                                        var tipoEntrada = document.getElementById("tipo-entrada").value;
-                                        var precioSeleccionado = document.getElementById("precio-seleccionado");
-                                        var tipoEntradaSeleccionado = document.getElementById("tipo-entrada-seleccionado");
-                                        var precioElement = document.getElementById(tipoEntrada + "-price");
-                                
-                                        // Obtener el precio del atributo data-precio
-                                        var precio = parseFloat(precioElement.getAttribute("data-precio"));
-                                
-                                        // Actualizar el texto en tiempo real
-                                        precioSeleccionado.textContent = precio.toFixed(2);
-                                        tipoEntradaSeleccionado.textContent = "(" + tipoEntrada.charAt(0).toUpperCase() + tipoEntrada.slice(1) + ")";
-                                
-                                        updateTotalPrice(); // Llamar a la función para actualizar el precio total
-                                    }
-                                
-                                    function updateQuantity(action) {
-                                        var quantityElement = document.getElementById("quantity");
-                                        var currentQuantity = parseInt(quantityElement.value);
-                                
-                                        if (action === 'increment') {
-                                            quantityElement.value = currentQuantity + 1;
-                                        } else if (action === 'decrement' && currentQuantity > 1) {
-                                            quantityElement.value = currentQuantity - 1;
-                                        }
-                                
-                                        updateTotalPrice(); // Llamar a la función para actualizar el precio total
-                                    }
-                                
-                                    function updateTotalPrice() {
-                                        var tipoEntrada = document.getElementById("tipo-entrada").value;
-                                        var precioElement = document.getElementById(tipoEntrada + "-price");
-                                        var precio = parseFloat(precioElement.getAttribute("data-precio"));
-                                        var quantity = parseInt(document.getElementById("quantity").value);
-                                
-                                        var totalPrice = precio * quantity;
-                                
-                                        // Actualizar el texto del precio total
-                                        document.getElementById("precio-seleccionado").textContent = totalPrice.toFixed(2);
-                                    }
-                                </script>
+                                        document.addEventListener('DOMContentLoaded', function () {
+                                            const tipoEntradaSelect = document.getElementById('tipo-entrada');
+                                            const tipoEntradaSeleccionadoInput = document.getElementById('tipo-entrada-seleccionado');
+                                    
+                                            tipoEntradaSelect.addEventListener('change', function () {
+                                                tipoEntradaSeleccionadoInput.value = tipoEntradaSelect.value;
+                                            });
+                                        });
+                                    </script>
+
+                                       
                             </div>
                             
 
@@ -279,7 +223,8 @@
                                 Fecha del Evento: {{ $ticket->fecha }}
                             </h5>
                             <div class="discount-code"></div>
-                            <a class="mt-3 btn btn-primary" href="{{ route('pagar', ['id' => $ticket->id])}}">Comprar</a>
+                            <a class="mt-3 btn btn-primary" href="{{ route('pagar', ['id' => $ticket->id]) }}">Comprar</a>
+
                         </div>
                     </div>
                 </div>
