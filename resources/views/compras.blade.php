@@ -1,16 +1,8 @@
-@extends("Layouts.layout")
-@section('title', 'Crystal Pass | Inicio')
-
+@extends("layouts.layout")
 
 <x-c-navegacion></x-c-navegacion>
-<x-c-nosotrosBaner>
-    @section("subtitle", "Festival de la cumbia")
-    @section("name-baner", "festival de la cumbia")
-</x-c-nosotrosBaner>
 
-@section('content')
 <section class="shop-single padding-tb">
-
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10 col-12 sticky-widget">
@@ -22,6 +14,7 @@
                                     <div class="swiper-wrapper" style="transform: translate3d(-2712px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="4" style="width: 442px; margin-right: 10px;">
                                             <div class="shop-item">
                                                 <div class="shop-thumb">
+                                                    <img style="width: 450px; height: 206.25px;"  src="{{ asset('storage/images/' . $ticket->img_path) }}" alt="Imagen del Evento" alt="speaker" alt="shop-single">
                                                 </div>
                                             </div>
                                         </div>
@@ -87,7 +80,7 @@
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="post-content">
-                                <h4>Festival de la Cumbia</h4>
+                                <h4>{{ $ticket->nomeven }}</h4>
                                 <p class="rating">
                                     <i class="far fa-star"></i>
                                     <i class="far fa-star"></i>
@@ -96,23 +89,40 @@
                                     <i class="far fa-star"></i>
                                     (3 review)
                                 </p>
-                                <h5 class="mb-3">
-                                    S/ 150.00
-                                </h5>
-                                <h5>
-                                    Un poco sobre el evento
-                                </h5>
+                                <h4 class="mb-3">
+                                    Precio entradas:
+                                </h4>
+
+                                <h6 class="mb-3">
+                                    Entrada Vip: {{$ticket->preciovip }}
+                                </h6>
+                                <h6 class="mb-3">
+                                    Entrada Oro: {{$ticket->preciooro }}
+                                </h6>
+                                <h6 class="mb-3">
+                                    Entrada Platino: {{$ticket->precioplatino }}
+                                </h6>
+                                
+                                
                                 <p>
-                                    Energistia an deliver atactica metrcs after avsionary Apropria trnsition
-                                    enterpris an sources applications emerging psd template communities.
+                                    {{ $ticket->detalles }}
                                 </p>
+
+                                <h6 class="mb-4">
+                                    Ubicacion:
+                                     {{ $ticket->direccion }}
+                                </h6>
+
+                                <h5 class="mb-3">
+                                    Fecha del Evento: {{ $ticket->fecha }}
+                                </h5>
                                 <form>
                                     <div class="select-product size">
                                         <select>
                                             <option>Selecione lugar</option>
-                                            <option>Vip 150</option>
-                                            <option>Oro 100</option>
-                                            <option>Platino 60</option>
+                                            <option>Vip</option>
+                                            <option>Oro</option>
+                                            <option>Platino</option>
                                         </select>
                                         <i class="fas fa-angle-down"></i>
                                     </div>
@@ -137,7 +147,7 @@
                             <ul class="agri-ul content">
                                 <li>
                                     <div class="post-thumb">
-                                        <img src="assets/images/team/06.jpg" alt="shop">
+                                        <img src="http://localhost/EntregableCrystalPass\public\assets/images/team/06.jpg" alt="shop">
                                     </div>
                                     <div class="post-content">
                                         <div class="entry-meta">
@@ -162,7 +172,7 @@
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <img src="assets/images/team/05.jpg" alt="shop">
+                                        <img src="http://localhost/EntregableCrystalPass\public\assets/images/team/05.jpg" alt="shop">
                                     </div>
                                     <div class="post-content">
                                         <div class="entry-meta">
@@ -187,7 +197,7 @@
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <img src="assets/images/team/06.jpg" alt="shop">
+                                        <img src="http://localhost/EntregableCrystalPass\public\assets/images/team/06.jpg" alt="shop">
                                     </div>
                                     <div class="post-content">
                                         <div class="entry-meta">
@@ -212,7 +222,7 @@
                                 </li>
                                 <li>
                                     <div class="post-thumb">
-                                        <img src="assets/images/team/05.jpg" alt="shop">
+                                        <img src="http://localhost/EntregableCrystalPass\public\assets/images/team/05.jpg" alt="shop">
                                     </div>
                                     <div class="post-content">
                                         <div class="entry-meta">
@@ -244,12 +254,4 @@
             </div>
         </div>
     </div>
-    @endforeach
 </section>
-
-
-
-<x-c-sponsor></x-c-sponsor>
-<x-c-ubicacion></x-c-ubicacion>
-<x-c-creditos></x-c-creditos>
-@stop

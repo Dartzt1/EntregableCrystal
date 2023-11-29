@@ -474,7 +474,7 @@ ul li {
 }
 @media (min-width: 992px) {
   .padding-tb {
-    padding-top: 120px;
+    /* padding-top: 120px; */
     padding-bottom: 105px;
   }
 }

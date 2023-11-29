@@ -21,7 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('eventos', [verEventosController::class, 'vereventos'])->name('vereventos');
-Route::get('/eventos/comprar/{id}', [TicketController::class, 'comprar'])->name('comprar');
+Route::get('/eventos/comprar/{id}', [TicketController::class, 'compras'])->name('compras');
 
 
 Route::get('nosotros', function () {
@@ -59,9 +59,3 @@ Route::get('/auth/callback', [AuthController::class, 'callback']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-
-Route::get('festivalcumbia', function () {
-    return view('eventosgenerales.festivalcumbia');
-});

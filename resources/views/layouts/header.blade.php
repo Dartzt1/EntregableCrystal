@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- logo -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/x-icon/Logo Crystal.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/x-icon/Logo Crystal.ico">
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/icofont.min.css">
-    <link rel="stylesheet" href="assets/css/lightcase.css">
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="http://localhost/EntregableCrystalPass\public\assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost/EntregableCrystalPass\public\assets/css/all.min.css">
+    <link rel="stylesheet" href="http://localhost/EntregableCrystalPass\public\assets/css/icofont.min.css">
+    <link rel="stylesheet" href="http://localhost/EntregableCrystalPass\public\assets/css/lightcase.css">
+    <link rel="stylesheet" href="http://localhost/EntregableCrystalPass\public\assets/css/swiper.min.css">
     <link rel="stylesheet" href="http://localhost/EntregableCrystalPass\public\assets\css\style.css">
 </head>
 <body>

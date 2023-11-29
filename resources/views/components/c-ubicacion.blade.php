@@ -6,7 +6,7 @@
                     <div class="footer-top-item lab-item">
                         <div class="lab-inner">
                             <div class="lab-thumb">
-                                <img src="assets/images/footer/footer-top/celular.png" alt="Phone-icon">
+                                <img src="http://localhost/EntregableCrystalPass\public\assets/images/footer/footer-top/celular.png" alt="Phone-icon">
                             </div>
                             <div class="lab-content">
                                 <span>Celular: +51 996 671 246</span>
@@ -18,7 +18,7 @@
                     <div class="footer-top-item lab-item">
                         <div class="lab-inner">
                             <div class="lab-thumb">
-                                <img src="assets/images/footer/footer-top/correo.png" alt="email-icon">
+                                <img src="http://localhost/EntregableCrystalPass\public\assets/images/footer/footer-top/correo.png" alt="email-icon">
                             </div>
                             <div class="lab-content">
                                 <span>Correo: CrystalPass@gmail.com</span>
@@ -30,7 +30,7 @@
                     <div class="footer-top-item lab-item">
                         <div class="lab-inner">
                             <div class="lab-thumb">
-                                <img src="assets/images/footer/footer-top/ubicacion.png" alt="location-icon">
+                                <img src="http://localhost/EntregableCrystalPass\public\assets/images/footer/footer-top/ubicacion.png" alt="location-icon">
                             </div>
                             <div class="lab-content">
                                 <span>Dirección: Jr. Lima 433 - Huancayo</span>
@@ -53,7 +53,7 @@
                             <div class="fm-item-content">
                                 <p class="mb-30">Encuentranos en Jr. Lima 433 - Huancayo</p>
                                 <link rel="web" href="https://maps.app.goo.gl/CByyVmr4gEw1JaGF8">
-                                <img class="rounded footer-abt-img" src="../assets\images\footer\footer-middle\map.png" width="100%"
+                                <img class="rounded footer-abt-img" src="http://localhost/EntregableCrystalPass\public\assets\images\footer\footer-middle\map.png" width="100%"
                                     alt="about-image">
                             </div>
                         </div>

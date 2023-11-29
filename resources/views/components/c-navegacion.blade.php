@@ -5,7 +5,7 @@
             <div class="header-wrapper">
                 <div class="logo">
                     <a href="/">
-                        <img src="assets/images/logo/logo_baner.png" width="185" alt="logo">
+                        <img src="http://localhost/EntregableCrystalPass\public\assets/images/logo/logo_baner.png" width="185" alt="logo">
                     </a>
                 </div>
                     
@@ -21,7 +21,7 @@
                                 @auth
                                     <div>
                                         <a href="{{ url('/dashboard') }}">
-                                            <img src="assets\images\user.png" width="45" />
+                                            <img src="http://localhost/EntregableCrystalPass\public\assets\images\user.png" width="45" />
                                         </a>
 
                                     </div>

@@ -135,9 +135,9 @@ public function show(string $id)
         return back();
     }
 
-    public function comprar($id)
+    public function compras($id)
 {
     $ticket = Ticket::findOrFail($id);
-    return view('eventosgenerales.comprar', ['ticket' => $ticket]);
+    return view('compras', ['ticket' => $ticket]);
 }
 }
