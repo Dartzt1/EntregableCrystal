@@ -244,9 +244,7 @@
                                 Fecha del Evento: {{ $ticket->fecha }}
                             </h5>
                             <div class="discount-code"></div>
-                                    <button type="submit" class="lab-btn">Comprar</button>
-                        
-                            
+                                    <a class="mt-3 btn btn-primary" href="{{ route('pagar', ['id' => $ticket->id])}}">Comprar</a>
                             </div>
                         </div>
                     </div>

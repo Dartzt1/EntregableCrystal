@@ -34,6 +34,7 @@ Route::get('/eventos', [verEventosController::class, 'vereventos'])->name('verev
 
 Route::get('/eventos/comprar/{id}', [TicketController::class, 'compras'])->name('compras');
 
+Route::get('/eventos/pagar/{id}', [TicketController::class, 'pagar'])->name('pagar');
 
 Route::post('/enviarcorreo', [EmailController::class, 'enviarcorreo'])->name('enviarcorreo');
 

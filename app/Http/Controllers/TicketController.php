@@ -139,10 +139,13 @@ public function show(string $id)
 {
     $ticket = Ticket::findOrFail($id);
 
-    
-
-
-
     return view('compras', ['ticket' => $ticket]);
+}
+
+public function pagar($id)
+{
+    $ticket = Ticket::findOrFail($id);
+
+    return view('pagar', ['ticket' => $ticket]);
 }
 }
