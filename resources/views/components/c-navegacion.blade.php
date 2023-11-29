@@ -12,9 +12,9 @@
                 <div class="menu-area">
                     <ul class="menu">
                         <li> <a href="/">Inicio</a> </li>
-                        <li> <a href="eventos" >Eventos</a> </li>
-                        <li> <a href="nosotros" >Nosotros</a> </li>
-                        <li> <a href="contacto">Contacto</a> </li>
+                        <li> <a href="/eventos" >Eventos</a> </li>
+                        <li> <a href="/nosotros" >Nosotros</a> </li>
+                        <li> <a href="/contacto">Contacto</a> </li>
                         <li>  
                             @if (Route::has('login'))
                             <div>

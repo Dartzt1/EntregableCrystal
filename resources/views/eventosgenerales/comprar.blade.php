@@ -29,10 +29,11 @@
                                     <div class="swiper-wrapper" style="transform: translate3d(-2712px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="4" style="width: 442px; margin-right: 10px;">
                                             <div class="shop-item">
                                                 <div class="shop-thumb">
-                                                    <<img style="width: 450px; height: 206.25px;"  src="{{ asset('storage/images/' . $ticket->img_path) }}" alt="Imagen del Evento" alt="speaker">
+                                                    <a href="{{ asset('storage/images/' . $ticket->img_path) }}" target="_blank" class="image-popup-link">
+                                                        <img src="{{ asset('storage/images/' . $ticket->img_path) }}" alt="Imagen del Evento" style="max-width: 50px;">
+                                                    </a>
                                                 </div>
                                             </div>
-                                        </div>
                                         <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 442px; margin-right: 10px;">
                                             <div class="shop-item">
                                                 <div class="shop-thumb">
@@ -68,29 +69,34 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 500px; margin-right: 10px;">
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="width: 500px; margin-right: 10px;">
                                             <div class="shop-item">
                                                 <div class="shop-thumb">
                                                     <img src="assets/images/product/cumbia.jpg" alt="shop-single">
                                                 </div>
                                             </div>
-                                        </div></div>
-                                    <div class="shop-navigation d-flex flex-wrap">
-                                        <div class="shop-nav shop-slider-prev" tabindex="0" role="button" aria-label="Previous slide"><i class="icofont-simple-left"></i>
                                         </div>
-                                        <div class="shop-nav shop-slider-next" tabindex="0" role="button" aria-label="Next slide"><i class="icofont-simple-right"></i>
+
+                                        
+                                        <div class="flex-wrap shop-navigation d-flex">
+                                            <div class="shop-nav shop-slider-prev" tabindex="0" role="button" aria-label="Previous slide"><i class="icofont-simple-left"></i>
+                                            </div>
+                                            <div class="shop-nav shop-slider-next" tabindex="0" role="button" aria-label="Next slide"><i class="icofont-simple-right"></i>
+                                            </div>
                                         </div>
+
+                                        
+                                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                        </div>
+                                            <div class="swiper-container gallery-thumbs swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-container-thumbs">
+                                                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                                    
+                                        
+                                                
+                                                
+                                            </div>
+                                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
                                     </div>
-                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                                <div class="swiper-container gallery-thumbs swiper-container-initialized swiper-container-horizontal swiper-container-free-mode swiper-container-thumbs">
-                                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-                                        
-                                
-                                        
-                                        
-                                    </div>
-                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-                            </div>
                         </div>
                         <div class="col-md-6 col-12">
                             <div class="post-content">

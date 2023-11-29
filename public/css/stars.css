@@ -1,0 +1,19 @@
+.star {
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffd700; /* color amarillo para las estrellas */
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.reviews {
+    margin-left: 10px;
+}
+
+/* Agrega el estilo para estrellas no seleccionadas */
+.star.far {
+    color: #ccc; /* color gris para estrellas no seleccionadas */
+}

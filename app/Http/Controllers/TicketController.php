@@ -138,6 +138,11 @@ public function show(string $id)
     public function compras($id)
 {
     $ticket = Ticket::findOrFail($id);
+
+    
+
+
+
     return view('compras', ['ticket' => $ticket]);
 }
 }

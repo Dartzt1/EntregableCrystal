@@ -9,5 +9,6 @@
 <script src="http://localhost/EntregableCrystalPass\public\assets/js/isotope.pkgd.min.js"></script>
 <script src="http://localhost/EntregableCrystalPass\public\assets/js/lightcase.js"></script>
 <script src="http://localhost/EntregableCrystalPass\public\assets/js/functions.js"></script>
+<script src="http://localhost/EntregableCrystalPass\public\assets/js/star.js"></script>
 </body>
 </html>  

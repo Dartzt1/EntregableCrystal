@@ -20,17 +20,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('eventos', [verEventosController::class, 'vereventos'])->name('vereventos');
-Route::get('/eventos/comprar/{id}', [TicketController::class, 'compras'])->name('compras');
-
-
-Route::get('nosotros', function () {
+Route::get('/nosotros', function () {
     return view('nosotros');
 });
 
-Route::get('contacto', function () {
+Route::get('/contacto', function () {
     return view('contacto');
 });
+
+Route::get('/eventos', [verEventosController::class, 'vereventos'])->name('vereventos');
+
+Route::get('/eventos/comprar/{id}', [TicketController::class, 'compras'])->name('compras');
+
+// Resto de tus rutas y middleware...
+
 
 
 
