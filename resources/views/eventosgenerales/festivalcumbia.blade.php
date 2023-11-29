@@ -8,7 +8,9 @@
     @section("name-baner", "festival de la cumbia")
 </x-c-nosotrosBaner>
 
+
 <section class="shop-single padding-tb">
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10 col-12 sticky-widget">
@@ -20,7 +22,6 @@
                                     <div class="swiper-wrapper" style="transform: translate3d(-2712px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-swiper-slide-index="4" style="width: 442px; margin-right: 10px;">
                                             <div class="shop-item">
                                                 <div class="shop-thumb">
-                                                    <img src="assets/images/product/cumbia.jpg" alt="shop-single">
                                                 </div>
                                             </div>
                                         </div>
@@ -243,6 +244,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 

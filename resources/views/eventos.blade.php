@@ -5,92 +5,42 @@
 <x-c-navegacion></x-c-navegacion>
 <x-c-baner></x-c-baner>
 
-<style>
-    .columna-dos {
-        display: flex;
-    }
-    .columna-espacio {
-        flex: 0 0 50%;
-        margin: 0 10px;
-        position: left;
-    }
-</style>
-
 @section('content')
-<div class="container">
+<div class="row g-5">
     @foreach($tickets as $ticket)
-
-    <div class="row justify-content-center pb-15">
-
-        <div class="container">
-            <div class="columna-dos">
-
-                <div class="columna-espacio">
-                    <a href="festivalcumbia">
-                        <div >
-                            <div class="aspect__inner">
-                                <img src="{{ asset('storage/images/' . $ticket->img_path) }}" alt="Imagen del Evento">
-                            </div>
-                        </div>
-                        <div class="evento--box">
-                            <div class="d-none d-md-block">
-                                <img src="assets\images\espaciador.png" alt="ticket" class="ico-ticket">
-                            </div>
-                            <div>
-                                <p class="descripcion text-truncate">
-                                    <strong>{{ $ticket->tipoeven }}</strong>
-                                </p>
-                                <h3 title="KAROL G - MAÑANA SERÁ BONITO LATAM TOUR ">
-                                    <strong>{{ $ticket->nomeven }}</strong>
-                                </h3>
-                                <p class="fecha text-truncate">
-                                    <strong>{{ $ticket->fecha }}</strong>
-                                </p>
-                                <p class="fecha text-truncate">
-                                    Uicacion: <strong>{{ $ticket->direccion }}</strong>
-                                </p>
-                            </div>
-                        </div>
+    <div class="container">
+        <div class="speaker-item">
+            <div class="speaker-inner">
+                <div>
+                    <a href="festivalcumbia" target="_blank" class="image-popup-link">
+                        <img style="width: 450px; height: 206.25px;"  src="{{ asset('storage/images/' . $ticket->img_path) }}" alt="Imagen del Evento" alt="speaker">
                     </a>
                 </div>
-
-                
-                <div class="columna-espacio">
-                    <a href="festivalcumbia">
-                        <div >
-                            <div class="aspect__inner">
-                                <img src="{{ asset('storage/images/' . $ticket->img_path) }}" alt="Imagen del Evento">
-                            </div>
-                        </div>
-                        <div class="evento--box">
-                            <div class="d-none d-md-block">
-                                <img src="assets\images\espaciador.png" alt="ticket" class="ico-ticket">
-                            </div>
-                            <div>
-                                <p class="descripcion text-truncate">
-                                    <strong>{{ $ticket->tipoeven }}</strong>
-                                </p>
-                                <h3 title="KAROL G - MAÑANA SERÁ BONITO LATAM TOUR ">
-                                    <strong>{{ $ticket->nomeven }}</strong>
-                                </h3>
-                                <p class="fecha text-truncate">
-                                    <strong>{{ $ticket->fecha }}</strong>
-                                </p>
-                                <p class="fecha text-truncate">
-                                    Uicacion: <strong>{{ $ticket->direccion }}</strong>
-                                </p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="speaker-content">
+                    <div class="spkr-content-title">
+                        <h5>
+                            <a href="">
+                            <strong>{{ $ticket->nomeven }}</strong> 
+                            </a> 
+                        </h5>
+                        <p>
+                            <strong> {{ $ticket->tipoeven }}</strong> / {{ $ticket->fecha }}
+                        </p>
+                    </div>
+                    <div class="spkr-content-details">
+                        <p>
+                            <strong> {{ $ticket->direccion }}</strong>
+                        </p>
+                        |
+                    </div>
                 </div>
-                
             </div>
         </div>
     </div>
     @endforeach
 </div>
 
-
-
 <x-c-ubicacion></x-c-ubicacion>
 <x-c-creditos></x-c-creditos>
+
+@stop

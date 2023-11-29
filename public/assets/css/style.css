@@ -672,7 +672,7 @@ ul li {
   .speaker-item .speaker-inner {
     align-items: flex-end;
     flex-direction: row;
-    text-align: inherit;
+    
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -681,7 +681,6 @@ ul li {
   }
 }
 .speaker-item .speaker-inner .speaker-thumb img {
-  filter: grayscale(1);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;

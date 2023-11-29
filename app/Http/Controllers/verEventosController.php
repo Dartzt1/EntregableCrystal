@@ -17,3 +17,5 @@ class verEventosController extends Controller
         return view('eventos', ['tickets' => $tickets]);
     }
 }
+
+
