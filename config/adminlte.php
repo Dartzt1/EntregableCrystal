@@ -345,20 +345,6 @@ return [
 
         ],
 
-        ['header' => 'CLIENTE',
-        'can' => 'Administrar',],
-        [
-            'text' => 'Lista de clientes',
-            'route'  => 'cliente.index',
-            'icon' => 'fas fa-fw fa-user',
-            'can' => 'Administrar',
-        ],
-        [
-            'text' => 'Nuevo Cliente',
-            'route'  => 'cliente.create',
-            'icon' => 'fas fa-fw fa-lock',
-            'can' => 'Administrar',
-        ],
 
         ['header' => 'EVENTOS',
         'can' => 'Administrar',],
