@@ -46,15 +46,34 @@
             <div class="row shape-c">
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="footer-middle-item-wrapper">
-                        <div class="footer-middle-item mb-5 mb-lg-0">
+                        <div class="mb-5 footer-middle-item mb-lg-0">
                             <div class="fm-item-title">
                                 <h5>Ubicacion</h5>
                             </div>
                             <div class="fm-item-content">
                                 <p class="mb-30">Encuentranos en Jr. Lima 433 - Huancayo</p>
-                                <link rel="web" href="https://maps.app.goo.gl/CByyVmr4gEw1JaGF8">
-                                <img class="rounded footer-abt-img" src="http://localhost/EntregableCrystalPass\public\assets\images\footer\footer-middle\map.png" width="100%"
-                                    alt="about-image">
+
+                                <div >
+                                        <div id="map" style="height: 300px;" ></div>
+
+                                        <script type="text/javascript" src="https://www.bing.com/api/maps/mapcontrol?key={{ env('BING_MAPS_API_KEY') }}&callback=initMap" async defer></script>
+
+                                        <script>
+                                            function initMap() {
+
+                                                var myLatLng = new Microsoft.Maps.Location(-12.070195380835983, -75.21083882326128);
+                                                var map = new Microsoft.Maps.Map(document.getElementById('map'), {
+                                                    center: myLatLng,
+                                                    zoom: 15
+                                                });
+                                                var pin = new Microsoft.Maps.Pushpin(myLatLng, {
+                                                    title: 'Ubicación de Crystal Pass'
+                                                });
+                                                map.entities.push(pin);
+                                            }
+                                       </script>                        
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -62,18 +81,14 @@
                 
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="footer-middle-item-wrapper">
-                        <div class="footer-middle-item-3 mb-5 mb-lg-0">
+                        <div class="mb-5 footer-middle-item-3 mb-lg-0">
                             <div class="fm-item-title">
                                 <h5>ESCRIBENOS</h5>
                             </div>
                             <div class="fm-item-content">
-                                <p>Tienes una sugerencia o deseas trabajar con nosotros, escribenos.</p>
+                                <p>Tienes una sugerencia o deseas dejar un mensaje?</p>
                                 <form>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Correo">
-                                    </div>
-                                    <button type="submit" class="lab-btn">Enviar mensaje <i
-                                            class="icofont-paper-plane"></i></button>
+                                            <li> <a class="lab-btn" href="/contacto">Conmunicate</a> </li>
                                 </form>
                             </div>
                         </div>

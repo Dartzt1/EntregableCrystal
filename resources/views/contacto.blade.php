@@ -24,13 +24,13 @@
                                 <p class="mb-5">Comunicate con nosostros para poderte ayudarte. (quejas o sugerencias comunicarse enviando un 
                                     mensaje menete el formulario)
                                 </p>
-                                <form action="#" method="POST" id="commentform" class="comment-form">
-                                    <input type="text" name="name" class="" placeholder="Name*">
+                                <form action="{{ route('enviarcorreo') }}" method="POST" id="commentform" class="comment-form">
+                                    @csrf
+                                    <input type="text" name="nombre" class="" placeholder="Nombre*">
                                     <input type="email" name="email" class="" placeholder="Email*">
-                                    <input type="text" name="number" class="" placeholder="Number*">
-                                    <input type="email" name="subject" class="" placeholder="Subject*">
-                                    <textarea name="text" id="role" cols="30" rows="9"
-                                        placeholder="Message*"></textarea>
+                                    <input type="text" name="asunto" class="" placeholder="Asunto*">
+                                    <textarea name="mensaje" id="role" cols="30" rows="9"
+                                        placeholder="Mensaje"></textarea>
                                     <button type="submit" class="lab-btn">
                                         <span>Envianos un mensaje</span>
                                     </button>

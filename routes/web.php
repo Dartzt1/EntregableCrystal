@@ -1,14 +1,16 @@
 <?php
 
-use App\Http\Controllers\AsignarController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\TicketController;
+use App\Http\Controllers\AsignarController;
+use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\PermisoController;
+use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\verEventosController;
+use App\Http\Controllers\EmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +34,9 @@ Route::get('/eventos', [verEventosController::class, 'vereventos'])->name('verev
 
 Route::get('/eventos/comprar/{id}', [TicketController::class, 'compras'])->name('compras');
 
-// Resto de tus rutas y middleware...
+
+Route::post('/enviarcorreo', [EmailController::class, 'enviarcorreo'])->name('enviarcorreo');
+
 
 
 
