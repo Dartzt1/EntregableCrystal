@@ -1,13 +1,32 @@
 @extends('adminlte::page')
 
-@section('title', 'Dashboard')
+@section('title', 'Lista Eventos')
 
 @section('content_header')
     <h1>Inicio</h1>
 @stop
 
+<style>
+    .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5PX;
+}
+
+/* Estilo cuando se pasa el cursor sobre el botón */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+</style>
+
 @section('content')
     <p>Welcome to this beautiful admin panel.</p>
+    <a href="pdf" class="btn-primary" target="_blank">Exportar</a>
     <div class="card">
         <div class="card-body">
             @php

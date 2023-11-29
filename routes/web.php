@@ -11,6 +11,7 @@ use App\Http\Controllers\PermisoController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\verEventosController;
 use App\Http\Controllers\EmailController;
+use Barryvdh\DomPDF\Facade\Pdf as PDF;
 
 /*
 |--------------------------------------------------------------------------
@@ -67,3 +68,15 @@ Route::get('/auth/callback', [AuthController::class, 'callback']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+Route::get("pdf",function () {
+    
+    $pdf = PDF::loadView("PDF.pdf");
+
+    return $pdf->stream();
+});
+
+
+Route::get('/tickets', 'TicketController@showTickets')->name('tickets.show');
