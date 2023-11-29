@@ -21,7 +21,7 @@
                                 @auth
                                     <div>
                                         <a href="{{ url('/dashboard') }}">
-                                            <img src="http://localhost/EntregableCrystalPass\public\assets\images\user.png" width="45" />
+                                            <img src="http://localhost/EntregableCrystalPass\public\assets\images\user.png" width="30" />
                                         </a>
 
                                     </div>
