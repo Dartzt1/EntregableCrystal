@@ -6,9 +6,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10 col-12 sticky-widget">
-                <div class="product-details">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 col-12">
+                <form method="POST" action="{{ route('pagar', ['id' => $ticket->id]) }}">
+                    @csrf
+                    <div class="product-details">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-12">
                             <div class="product-thumb">
                                 <div class="swiper-container gallery-top swiper-container-initialized swiper-container-horizontal">
                                     <div class="swiper-wrapper" style="transform: translate3d(-2712px, 0px, 0px); transition-duration: 0ms;">
@@ -50,9 +52,10 @@
                                 <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12">
-                            <div class="post-content">
-                                <h4>{{ $ticket->nomeven }}</h4>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="post-content">
+                            <h4>{{ $ticket->nomeven }}</h4>
 
                             {{-- Stars --}}
                             <div>
@@ -129,7 +132,6 @@
                                     Precio entradas: S/ <span id="precio-seleccionado">{{$ticket->preciovip}}</span>
                                     <span id="tipo-entrada-seleccionado">(Vip)</span>
                                 </h4>
-                            
                                 <h6 id="vip-price" class="mb-3" data-precio="{{$ticket->preciovip}}" style="display: none;">
                                     Entrada Vip: S/ {{$ticket->preciovip}}
                                 </h6>
@@ -202,24 +204,22 @@
                                     
                                     <div class="selector-container">
                                         <div class="selector">
-                                            <select id="tipo-entrada" onchange="updatePrice()">
+                                            <select id="tipo-entrada" name="tipo_entrada" onchange="updatePrice()">
                                                 <option value="vip">Vip</option>
                                                 <option value="oro">Oro</option>
                                                 <option value="platino">Platino</option>
                                             </select>
                                             <i style="color: black;" class="fas fa-arrow-down"></i>
                                         </div>
-                                    
+
                                         <div class="cart-plus-minus">
                                             <div class="dec qtybutton" onclick="updateQuantity('decrement')">-</div>
-                                            <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" id="quantity" readonly>
+                                            <input class="cart-plus-minus-box" type="text" name="quantity" value="1" id="quantity" readonly>
                                             <div class="inc qtybutton" onclick="updateQuantity('increment')">+</div>
                                         </div>
                                     </div>
-                                    
-                                
-                            
-                                <script>
+
+                                    <script>
                                     function updatePrice() {
                                         var tipoEntrada = document.getElementById("tipo-entrada").value;
                                         var precioSeleccionado = document.getElementById("precio-seleccionado");
@@ -269,24 +269,25 @@
                             <p style="font-size: 16px; line-height: 1.6; color: #333; margin-bottom: 20px;">
                                 {{ $ticket->detalles }}
                             </p>
-                                                
+
                             <h6 class="mb-4">
                                 Ubicacion:
                                 {{ $ticket->direccion }}
                             </h6>
-                            
+
                             <h5 class="mb-3">
                                 Fecha del Evento: {{ $ticket->fecha }}
                             </h5>
                             <div class="discount-code"></div>
-                                    <a class="mt-3 btn btn-primary" href="{{ route('pagar', ['id' => $ticket->id])}}">Comprar</a>
-                            </div>
+                            <a class="mt-3 btn btn-primary" href="{{ route('pagar', ['id' => $ticket->id])}}">Comprar</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
-    <x-c-ubicacion></x-c-ubicacion>
+</div>
+</div>
+<x-c-ubicacion></x-c-ubicacion>
 <x-c-creditos></x-c-creditos>
 </section>
