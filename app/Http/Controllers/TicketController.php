@@ -138,8 +138,6 @@ public function show(string $id)
     public function comprar($id)
 {
     $ticket = Ticket::findOrFail($id);
-
-    // Aquí puedes pasar los datos a la vista 'comprar'
-    return view('comprar', ['ticket' => $ticket]);
+    return view('eventosgenerales.comprar', ['ticket' => $ticket]);
 }
 }
