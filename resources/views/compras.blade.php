@@ -122,7 +122,7 @@
                                     </style>
                             </div>
                                 
-                                
+                               
                             {{-- Precio y Tipo --}}
                             <div>
                                 <h4 class="mb-3">
@@ -140,24 +140,21 @@
                                     Entrada Platino: S/ {{$ticket->precioplatino}}
                                 </h6>
                             
-                                <form>
-                                    <div class="selector">
-                                        <select id="tipo-entrada" onchange="updatePrice()">
-                                            <option value="vip">Vip</option>
-                                            <option value="oro">Oro</option>
-                                            <option value="platino">Platino</option>
-                                        </select>
-                                        <i style="color: black;" class="fas fa-arrow-down"></i>
-                                    </div>
-                                    
+                                <div>
                                     <style>
-                                        /* Estilos para el selector de tipo de entrada */
-                                        .selector {
-                                            position: relative;
-                                            width: 200px;
+                                        /* Estilos para el contenedor del selector y el campo de entrada */
+                                        .selector-container {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            width: 100%;
                                             margin-bottom: 20px;
                                         }
-                            
+                                    
+                                        .selector {
+                                            position: relative;
+                                            width: 48%; /* Puedes ajustar el ancho según tus necesidades */
+                                        }
+                                    
                                         .selector select {
                                             width: 100%;
                                             padding: 10px;
@@ -168,7 +165,7 @@
                                             -moz-appearance: none;
                                             cursor: pointer;
                                         }
-                            
+                                    
                                         .selector i {
                                             position: absolute;
                                             top: 50%;
@@ -176,14 +173,51 @@
                                             transform: translateY(-50%);
                                             pointer-events: none;
                                         }
+                                    
+                                        .cart-plus-minus {
+                                            width: 48%; /* Puedes ajustar el ancho según tus necesidades */
+                                            
+                                            justify-content: space-between;
+                                            align-items: center; /* Alinea los elementos verticalmente en el centro */
+                                        }
+                                    
+                                        .cart-plus-minus .dec,
+                                        .cart-plus-minus .inc {
+                                            width: 48px; /* Puedes ajustar el ancho según tus necesidades */
+                                            
+                                            border: 1px solid #ccc;
+                                            border-radius: 5px;
+                                            text-align: center;
+                                            cursor: pointer;
+                                        }
+                                    
+                                        .cart-plus-minus .cart-plus-minus-box {
+                                            width: calc(100% - 96px); /* Ajusta para dejar espacio suficiente para los botones */
+                                            padding: 10px;
+                                            border: 1px solid #ccc;
+                                            border-radius: 5px;
+                                            text-align: center;
+                                        }
                                     </style>
-                            
-                                    <div class="cart-plus-minus">
-                                        <div class="dec qtybutton" onclick="updateQuantity('decrement')">-</div>
-                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" id="quantity" readonly>
-                                        <div class="inc qtybutton" onclick="updateQuantity('increment')">+</div>
+                                    
+                                    <div class="selector-container">
+                                        <div class="selector">
+                                            <select id="tipo-entrada" onchange="updatePrice()">
+                                                <option value="vip">Vip</option>
+                                                <option value="oro">Oro</option>
+                                                <option value="platino">Platino</option>
+                                            </select>
+                                            <i style="color: black;" class="fas fa-arrow-down"></i>
+                                        </div>
+                                    
+                                        <div class="cart-plus-minus">
+                                            <div class="dec qtybutton" onclick="updateQuantity('decrement')">-</div>
+                                            <input class="cart-plus-minus-box" type="text" name="qtybutton" value="1" id="quantity" readonly>
+                                            <div class="inc qtybutton" onclick="updateQuantity('increment')">+</div>
+                                        </div>
                                     </div>
-                                </form>
+                                    
+                                
                             
                                 <script>
                                     function updatePrice() {
@@ -231,6 +265,7 @@
                             
 
                             {{-- Direccion --}}
+                            
                             <p style="font-size: 16px; line-height: 1.6; color: #333; margin-bottom: 20px;">
                                 {{ $ticket->detalles }}
                             </p>
