@@ -8,7 +8,7 @@
     @section("name-baner", "festival de la cumbia")
 </x-c-nosotrosBaner>
 
-
+@section('content')
 <section class="shop-single padding-tb">
 
     <div class="container">
@@ -244,7 +244,7 @@
             </div>
         </div>
     </div>
-
+    @endforeach
 </section>
 
 
@@ -252,3 +252,4 @@
 <x-c-sponsor></x-c-sponsor>
 <x-c-ubicacion></x-c-ubicacion>
 <x-c-creditos></x-c-creditos>
+@stop

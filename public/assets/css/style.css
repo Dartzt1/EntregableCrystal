@@ -225,7 +225,7 @@ footer .footer-middle .footer-middle-item-wrapper .footer-middle-item .fm-item-c
 .shop-product-wrap .product-list-item, .shop-cart .section-wrapper .cart-top table thead tr th:nth-child(3), .sponsor-section .all-sponsor .platinum-sponsor,
 .sponsor-section .all-sponsor .gold-sponsor,
 .sponsor-section .all-sponsor .silver-sponsor, .about-section .about-image .play-btn i, .banner-section .banner-wrapper .banner-content, .header-wrapper .menu-area .cart-ticket .cart-icon .cart-content .cart-list .cart-item .cart-inner .cart-details .close-btn a, .header-wrapper .menu-area .cart-ticket .cart-icon a span, .fore-zero .section-wrapper .zero-item, .pricing-item .pricing-inner .pricing-content .get-ticket a ul li.icon, .pricing-item .pricing-inner .pricing-header, .schedule-pack h5, .speaker-item-2 .speaker-inner .speaker-content .speaker-content-inner, .speaker-item .speaker-inner, .section-header {
-  text-align: center;
+text-align: center;
 }
 
 .shop-cart .section-wrapper .cart-top table tbody tr td:last-child, .shop-cart .section-wrapper .cart-top table thead tr th:last-child {
@@ -672,7 +672,6 @@ ul li {
   .speaker-item .speaker-inner {
     align-items: flex-end;
     flex-direction: row;
-    
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2089,7 +2088,7 @@ ul li {
   z-index: 9999;
   width: 100%;
   height: 100%;
-  background: #0d8ef9;
+  /* background: #0d8ef9; */
 }
 .preloader .preloader-inner {
   position: absolute;
@@ -5028,7 +5027,7 @@ footer .footer-top .footer-top-item {
 }
 @media (min-width: 1200px) {
   footer .footer-top .footer-top-item {
-    /* padding: 40px 20px; */
+     padding: 40px 20px; 
   }
 }
 @media (max-width: 991px) {
