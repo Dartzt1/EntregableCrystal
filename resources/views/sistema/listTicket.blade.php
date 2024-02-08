@@ -32,7 +32,7 @@
             @php
                 $heads = [
                     'ID', 'Nombre Evento', 'Fecha', 'Numero de entradas', 'Tipo de evento', 'Proveedor','Precio Vip', 'Precio Oro', 'Precio Platino', 'img', 
-                    ['label' => 'Direccion', 'width' => 20],['label' => 'Detalles', 'width' => 40], ['label' => 'Actions', 'no-export' => true, 'width' => 20],
+                    ['label' => 'Direccion', 'width' => 20],['label' => 'Detalles', 'width' => 35], ['label' => 'Actions', 'no-export' => true, 'width' => 20],
                 ];
 
                 $btnEdit = '<a href="%s" class="mx-1 shadow btn btn-xs btn-default text-primary" title="Edit">
