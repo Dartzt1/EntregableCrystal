@@ -472,15 +472,15 @@ ul li {
   padding-top: 80px;
   padding-bottom: 55px;
 }
-@media (min-width: 992px) {
+@media (min-width: 0px) {
   .padding-tb {
     /* padding-top: 120px; */
-    padding-bottom: 105px;
+    padding-bottom: 0px;
   }
 }
 
 .padding-b {
-  padding-bottom: 55px;
+  padding-bottom: 0;
 }
 @media (min-width: 992px) {
   .padding-b {
@@ -5027,7 +5027,7 @@ footer .footer-top .footer-top-item {
 }
 @media (min-width: 1200px) {
   footer .footer-top .footer-top-item {
-     padding: 40px 20px; 
+     padding: 0px;
   }
 }
 @media (max-width: 991px) {

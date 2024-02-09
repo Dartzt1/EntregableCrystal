@@ -59,11 +59,7 @@
                                             </li>
 
                                         </ul>
-                                        <ul class="share lab-ul justify-content-center">
-                                            <li>
-                                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                            </li>
-                                        </ul>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -81,9 +77,10 @@
                                     con el aprendizaje continuo y el desarrollo de soluciones innovadoras que 
                                     puedan transformar industrias y mejorar la vida de las personas.</p>
                                 <div class="social-media">
-                                    <a href="https://www.instagram.com/mixayuzuka_/" class="instagram"><i class="icofont-instagram"></i></a>
                                     <a href="https://www.facebook.com/brayan.dlr10/" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                                    <a href="https://github.com/Dartzt1">
+                                        <img src="http://localhost/EntregableCrystalPass\public\assets/images/footer/footer-top/logo_git.png" width="35px">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -93,17 +90,18 @@
                                 <img src="assets/images/blog/Shyper.jpg" width="100%" alt="author">
                             </div>
                             <div class="author-content">
-                                <h6>Adriel Pilpa</h6>
+                                <h6>Adriel Pillpa</h6>
                                 <p>Al estudiar Ingeniería de Software con especialización en Inteligencia Artificial 
-                                    en el SENATI, estoy constantemente aprendiendo a comprender y aplicar las últimas 
+                                    en el SENATI, estoy constantemente aprendiendo y aplicando las últimas 
                                     tecnologías en el campo de la Inteligencia Artificial. Mi objetivo es convertirme 
                                     en un profesional altamente calificado y contribuir al desarrollo de la tecnología 
                                     creando soluciones inteligentes y efectivas.
                                 </p>
                                 <div class="social-media">
-                                    <a href="https://www.instagram.com/adrl_shypr/" class="instagram"><i class="icofont-instagram"></i></a>
                                     <a href="https://www.facebook.com/profile.php?id=61552470986221" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                                    <a href="https://github.com/ShyperDuck">
+                                        <img src="http://localhost/EntregableCrystalPass\public\assets/images/footer/footer-top/logo_git.png" width="35px">
+                                    </a>
                                 </div>
                             </div>
                         </div>                        
@@ -115,165 +113,38 @@
                     <aside class="ps-lg-4">
                         
 
-                        <div class="widget widget-category">
-                            <div class="widget-header">
-                                <h5>Categoria de eventos</h5>
-                            </div>
-                            <ul class="lab-ul widget-wrapper list-bg-none">
-                                <li>
-                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Música en Vivo</span></p>
-                                </li>
-                                <li>
-                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Festivales de Música</span></p>
-                                </li>
-                                <li>
-                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Teatro y Artes Escénicas</span></p>
-                                </li>
-                                <li>
-                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Eventos Deportivos</p>
-                                </li>
-                                <li>
-                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Ferias y Exposiciones</p>
-                                </li>
-                                <li>
-                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Eventos Culturales</p>
-                                </li>
-                                <li>
-                                    <p href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-rounded-double-right"></i>Eventos Gastronómicos</span></p>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="widget widget-post">
-                            <div class="widget-header">
-                                <h5>Proximos eventos</h5>
-                            </div>
-                            <ul class="lab-ul widget-wrapper">
-                                <li class="d-flex flex-wrap justify-content-between">
-                                    <div class="post-thumb rounded">
-                                        <p href="blog-single.html"><img src="assets/images/product/karol.jpg"
-                                                alt="product"></p>
-                                    </div>
-                                    <div class="post-content ps-3">
-                                        <p>
-                                            <h6>KAROL G - MAÑANA SERA BONITO</h6>
-                                        </p>
-                                        <p>04 February 2024</p>
-                                    </div>
-                                </li>
-                                <li class="d-flex flex-wrap justify-content-between">
-                                    <div class="post-thumb rounded">
-                                        <p href="blog-single.html"><img src="assets/images/product/romeo.jpg"
-                                                alt="product"></p>
-                                    </div>
-                                    <div class="post-content ps-3">
-                                        <p>
-                                            <h6>ROMEO SANTOS FORMULAR - LA GIRA </h6>
-                                        </p>
-                                        <p>04 February 2024</p>
-                                    </div>
-                                </li>
-                                <li class="d-flex flex-wrap justify-content-between">
-                                    <div class="post-thumb rounded">
-                                        <p><img src="assets/images/product/enjambre.jpg"
-                                                alt="product"></p>
-                                    </div>
-                                    <div class="post-content ps-3">
-                                        <p>
-                                            <h6>ENJAMBRE - LIMA</h6>
-                                        </p>
-                                        <p>04 February 2024</p>
-                                    </div>
-                                </li>
-                                <li class="d-flex flex-wrap justify-content-between">
-                                    <div class="post-thumb rounded">
-                                        <p href="blog-single.html"><img src="assets/images/product/cumbia.jpg"
-                                                alt="product"></p>
-                                    </div>
-                                    <div class="post-content ps-3">
-                                        <a href="blog-single.html">
-                                            <h6>FESTIVALPURA CUMBA - LIMA</h6>
-                                        </p>
-                                        <p>04 February 2024</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                        
 
                         <div class="widget widget-instagram">
                             <div class="widget-header">
                                 <h5>Instagram</h5>
                             </div>
                             <ul class="lab-ul widget-wrapper d-flex flex-wrap justify-content-center">
-                                <li><a class="rounded" href="#"><img src="assets/images/gallery/01.jpg"
+                                <li><a class="rounded" ><img src="assets/images/gallery/01.jpg"
                                             alt="gallery-img"></a></li>
-                                <li><a class="rounded" href="#"><img src="assets/images/gallery/02.jpg"
+                                <li><a class="rounded" ><img src="assets/images/gallery/02.jpg"
                                             alt="gallery-img"></a></li>
-                                <li><a class="rounded" href="#"><img src="assets/images/gallery/03.jpg"
+                                <li><a class="rounded" ><img src="assets/images/gallery/03.jpg"
                                             alt="gallery-img"></a></li>
-                                <li><a class="rounded" href="#"><img src="assets/images/gallery/04.jpg"
+                                <li><a class="rounded" ><img src="assets/images/gallery/04.jpg"
                                             alt="gallery-img"></a></li>
-                                <li><a class="rounded" href="#"><img src="assets/images/gallery/05.jpg"
+                                <li><a class="rounded" ><img src="assets/images/gallery/05.jpg"
                                             alt="gallery-img"></a></li>
-                                <li><a class="rounded" href="#"><img src="assets/images/gallery/06.jpg"
+                                <li><a class="rounded" ><img src="assets/images/gallery/06.jpg"
                                             alt="gallery-img"></a></li>
-                                <li><a class="rounded" href="#"><img src="assets/images/gallery/07.jpg"
+                                <li><a class="rounded" ><img src="assets/images/gallery/07.jpg"
                                             alt="gallery-img"></a></li>
-                                <li><a class="rounded" href="#"><img src="assets/images/gallery/08.jpg"
+                                <li><a class="rounded" ><img src="assets/images/gallery/08.jpg"
                                             alt="gallery-img"></a></li>
-                                <li><a class="rounded" href="#"><img src="assets/images/gallery/09.jpg"
+                                <li><a class="rounded" ><img src="assets/images/gallery/09.jpg"
                                             alt="gallery-img"></a></li>
                             </ul>
                         </div>
 
-                        <div class="widget widget-archive">
-                            <div class="widget-header">
-                                <h5>Calendario de eventos</h5>
-                            </div>
-                            <ul class="lab-ul widget-wrapper list-bg-none">
-                                <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-ui-calendar"></i>Enero</span><span>2024</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-ui-calendar"></i>Febero</span><span>2024</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-ui-calendar"></i>Marzo</span><span>2024</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-ui-calendar"></i>Agosto</span><span>2024</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-ui-calendar"></i>Setiembre</span><span>2024</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-ui-calendar"></i>Octubre</span><span>2024</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-ui-calendar"></i>Noviembre</span><span>2024</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="d-flex flex-wrap justify-content-between"><span><i
-                                                class="icofont-ui-calendar"></i>Dcibre</span><span>2024</span></a>
-                                </li>
-                            </ul>
-                        </div>
+                        
                     </aside>
                 </div>
+                
             </div>
         </div>
     </div>

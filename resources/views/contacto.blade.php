@@ -74,7 +74,7 @@
                                         </div>
                                         <div class="contact-info-details">
                                             <span class="fw-bold">Correo</span>
-                                            <p>CrystalPass@gmail.com</p>
+                                            <p>crystalpasscor@gmail.com</p>
                                         </div>
                                     </div>
                                 </div>
