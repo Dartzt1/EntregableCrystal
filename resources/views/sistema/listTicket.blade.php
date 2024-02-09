@@ -3,7 +3,7 @@
 @section('title', 'Lista Eventos')
 
 @section('content_header')
-    <h1>Inicio</h1>
+    <h1>Lista de Eventos</h1>
 @stop
 
 <style>
@@ -24,19 +24,19 @@
 </style>
 
 @section('content')
-    <p>Welcome to this beautiful admin panel.</p>
-    <br><br>
+
+
 
     <div class="card">
         <div>
-            <a href="pdf" class="float-right btn-primary" target="_blank">Exportar</a>
+            <a href="#" onclick="imprimirTabla('table1')" class="float-right btn-primary">Exportar</a>
         </div>
         <div class="card-body">
 
             @php
                 $heads = [
                     'ID', 'Nombre Evento', 'Fecha', 'Numero de entradas', 'Tipo de evento', 'Proveedor','Precio Vip', 'Precio Oro', 'Precio Platino', 'img', 
-                    ['label' => 'Direccion', 'width' => 20],['label' => 'Detalles', 'width' => 35], ['label' => 'Actions', 'no-export' => true, 'width' => 20],
+                    ['label' => 'Direccion', 'width' => 20],['label' => 'Detalles', 'width' => 35], ['label' => 'Acciones', 'no-export' => true, 'width' => 20],
                 ];
 
                 $btnEdit = '<a href="%s" class="mx-1 shadow btn btn-xs btn-default text-primary" title="Edit">
@@ -102,8 +102,6 @@
 
 @section('js')
     <script>
-
-
         $(document).ready(function(){
             $('.formEliminar').submit(function(e) {
                 e.preventDefault();
@@ -123,4 +121,31 @@
             });
         });
     </script>
+
+<script>
+    function imprimirTabla(idTabla) {
+        var tabla = document.getElementById(idTabla).cloneNode(true); // Clonar la tabla para no modificar la original
+        eliminarUltimaColumna(tabla); // Eliminar la última columna del clon de la tabla
+        var ventana = window.open('', 'PRINT', 'height=400,width=600');
+        ventana.document.write('<html><head><title>Tabla de Eventos</title></head><body>');
+        ventana.document.write(tabla.outerHTML);
+        ventana.document.write('</body></html>');
+        ventana.document.close();
+        ventana.print();
+        ventana.close();
+    }
+
+    function eliminarUltimaColumna(tabla) {
+        var rows = tabla.getElementsByTagName('tr');
+        for (var i = 0; i < rows.length; i++) {
+            var cells = rows[i].getElementsByTagName('td');
+            if (cells.length > 0) {
+                cells[cells.length - 1].remove(); // Eliminar la última celda de cada fila
+            }
+        }
+    }
+</script>
+
+
+
 @stop
