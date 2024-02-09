@@ -12,7 +12,7 @@
    
     <div class="card-body">
         @php
-        $heads = ['ID', 'ROL', 'EMAIL', ['label' => 'Actions','no-export' => true, 'width' => 20]];
+        $heads = ['ID', 'NOMBRE', 'EMAIL', ['label' => 'Actions','no-export' => true, 'width' => 20]];
 
         $btnEdit = '';
         $btnDelete = '<button type="submit" class="mx-1 shadow btn btn-xs btn-default text-danger" title="Delete">

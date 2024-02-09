@@ -361,6 +361,16 @@ return [
             'can' => 'Administrar',
         ],
 
+        
+        ['header' => 'REGRESAR'],
+
+        [
+            'text' => 'Volver a inicio',
+            'url'  => '/',
+            'icon' => 'fas fa-home',
+
+        ],
+
         // [
         //     'text'    => 'multilevel',
         //     'icon'    => 'fas fa-fw fa-share',

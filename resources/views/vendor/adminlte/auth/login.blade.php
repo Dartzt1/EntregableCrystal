@@ -88,7 +88,7 @@
 
 
                         <div class="social-login">
-                            <span class="social-label">Or login with</span>
+                            <span class="social-label">O logueate aqui</span>
                             <ul class="socials">
                                 <!--<li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
                                 <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>-->

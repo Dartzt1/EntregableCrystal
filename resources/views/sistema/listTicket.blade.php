@@ -18,7 +18,6 @@
   margin: 5PX;
 }
 
-/* Estilo cuando se pasa el cursor sobre el botón */
 .btn-primary:hover {
   background-color: #0056b3;
 }
@@ -26,9 +25,14 @@
 
 @section('content')
     <p>Welcome to this beautiful admin panel.</p>
-    <a href="pdf" class="btn-primary" target="_blank">Exportar</a>
+    <br><br>
+
     <div class="card">
+        <div>
+            <a href="pdf" class="float-right btn-primary" target="_blank">Exportar</a>
+        </div>
         <div class="card-body">
+
             @php
                 $heads = [
                     'ID', 'Nombre Evento', 'Fecha', 'Numero de entradas', 'Tipo de evento', 'Proveedor','Precio Vip', 'Precio Oro', 'Precio Platino', 'img', 
