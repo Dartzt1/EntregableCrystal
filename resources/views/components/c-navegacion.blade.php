@@ -20,10 +20,11 @@
                             <div>
                                 @auth
                                     <div>
+                                        <li>
                                         <a href="{{ url('/dashboard') }}">
-                                            <img src="http://localhost/EntregableCrystalPass\public\assets\images\user.png" width="30" />
+                                            <img src="http://localhost/EntregableCrystalPass\public\assets\images\user.png" width="30" style="display: block; margin: auto;" />
                                         </a>
-
+                                    </li>
                                     </div>
                                 @else
                                     <div>
